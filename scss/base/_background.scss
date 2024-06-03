@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height:100vh;
-    margin-top: 110px;
+    margin-top: 84px;
     text-align:center;
     @include flex(
         $flex-display:flex,
@@ -33,6 +33,8 @@
 
 #sticky-1{
     @extend %center;
+    //border-right:4px solid $aqua_blue;
+    //width:40%;
 }
 
 #sticky-2{

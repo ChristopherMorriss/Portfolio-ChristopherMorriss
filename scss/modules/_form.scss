@@ -1,0 +1,31 @@
+form{
+    @extend %center;
+    // @include flex(
+    //     $flex-display:flex,
+    //     $flex-direction:column,
+    //     $flex-wrap:nowrap,
+    //     $flex-align:center,
+    //     $flex-justify:space-between
+    //     );
+    @include grid($g-display:grid,
+                  $g-row:1fr,
+                  $g-column:1fr,
+                  $gutter-row:10px,
+                  $gutter-column:0px);
+    margin-left:20%;
+    margin-right:20%;
+    .form-object{
+        margin-bottom: 10px;
+    }
+}
+
+// .name{
+//     @extend %center;
+//     @include flex(
+//             $flex-display:flex,
+//             $flex-direction:row,
+//             $flex-wrap:nowrap,
+//             $flex-align:center,
+//             $flex-justify:space-between
+//             );
+// }

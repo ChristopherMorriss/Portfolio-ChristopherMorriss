@@ -10,6 +10,12 @@ a{
     }
 }
 
-h1,h2, p, button{
+button{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+h1,h2, p{
     @extend %center;
 }

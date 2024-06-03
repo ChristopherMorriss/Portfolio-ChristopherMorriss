@@ -5,3 +5,13 @@
     align-items: $flex-align;
     justify-content: $flex-justify;
 }
+
+@mixin grid($g-display,$g-row,$g-column,$gutter-row,$gutter-column){
+    display: $g-display;
+    grid-template-columns: $g-column;
+    grid-template-rows: $g-row;
+    row-gap: $gutter-row;
+    column-gap: $gutter-column;
+
+
+}

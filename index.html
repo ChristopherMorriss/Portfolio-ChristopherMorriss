@@ -11,14 +11,14 @@
     <body>
         <header>
         <div class="sticky-menu">
-            <h1 id="sticky-1"><a href="#">CM</a></h1>
+            <h1 id="sticky-1"><a href="index.html">CM</a></h1>
             <nav id="sticky-2">
-                <a href="#">About Me</a><br>
+                <a href="about-me.html">About Me</a><br>
                 <a href="#">My Portfolio</a><br>
                 <a href="#">Coding Examples</a><br>
                 <a href="scs-scheme.html">SCS Scheme</a>
         
-                <div id="contact">
+                <!-- <div id="contact">
                     <a href="#">Contact Me</a>
                 </div>
 
@@ -28,14 +28,15 @@
                     <span class="icon-instagram"></span>
                     <span class="icon-twitter"></span>
                     <span class="icon-linkedin2"></span>
-                </div>
+                </div> -->
             </nav>
         </div>
         </header>  
     <div class="banner">
         <h1>My Name is Christopher Morriss</h1>
         <h2>I'm a web developer</h2>
-        <h2>Scroll Down</h2>
+        <h2>Scroll Down &ShortDownArrow;</h2>
+        
     </div>
 
     
@@ -65,13 +66,18 @@
     <h2>00000 00000</h2>
     <h2>Email@EmailAddress.com</h2>
     <p>More Filler Information</p>
-    <input type="text" id="f-name" placeholder="First Name*">
-    <input type="text" id="l-name" placeholder="Last Name*">
-    <input type="text" id="email" placeholder="Email Address*">
-    <input type="text" id="subject" placeholder="Subject*">
-    <textarea placeholder="Message"></textarea>
-    <button class="btn">Submit</button>
+    <form>
+        <div class="name">
+            <input type="text" id="f-name" class="form-object" placeholder="First Name*">
+            <input type="text" id="l-name" class="form-object" placeholder="Last Name*">
+        </div>
+        <input type="text" id="email" class="form-object" placeholder="Email Address*">
+        <input type="text" id="subject" class="form-object" placeholder="Subject">
+        <textarea id="message-textarea" placeholder="Message" class="form-object"></textarea>
+        <button class="btn" class="form-object">Submit</button>
+    </form>
     </body>
     <footer>
+        <button>Back to Top &ShortUpArrow;</button>
     </footer>
 </html>

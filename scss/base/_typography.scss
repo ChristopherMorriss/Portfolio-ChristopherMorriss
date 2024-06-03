@@ -1,0 +1,117 @@
+@font-face {
+    font-family: '#{$icomoon-font-family}';
+    src:  url('../#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tl9t0p');
+    src:  url('../#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tl9t0p#iefix') format('embedded-opentype'),
+      url('../#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?tl9t0p') format('truetype'),
+      url('../#{$icomoon-font-path}/#{$icomoon-font-family}.woff?tl9t0p') format('woff'),
+      url('../#{$icomoon-font-path}/#{$icomoon-font-family}.svg?tl9t0p##{$icomoon-font-family}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: '#{$icomoon-font-family}' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-star {
+    &:before {
+      content: $icon-star; 
+      font-size:2em;
+    }
+  }
+  .icon-paper-plane {
+    &:before {
+      content: $icon-paper-plane; 
+    }
+  }
+  .icon-send {
+    &:before {
+      content: $icon-send; 
+    }
+  }
+  .icon-cogs {
+    &:before {
+      content: $icon-cogs; 
+    }
+  }
+  .icon-bar-graph {
+    &:before {
+      content: $icon-bar-graph; 
+    }
+  }
+  .icon-mouse {
+    &:before {
+      content: $icon-mouse; 
+    }
+  }
+  .icon-phone_in_talk {
+    &:before {
+      content: $icon-phone_in_talk; 
+    }
+  }
+  .icon-security {
+    &:before {
+      content: $icon-security; 
+    }
+  }
+  .icon-school {
+    &:before {
+      content: $icon-school; 
+    }
+  }
+  .icon-display {
+    &:before {
+      content: $icon-display; 
+    }
+  }
+  .icon-bubble {
+    &:before {
+      content: $icon-bubble; 
+    }
+  }
+  .icon-search {
+    &:before {
+      content: $icon-search; 
+    }
+  }
+  .icon-menu {
+    &:before {
+      content: $icon-menu; 
+    }
+  }
+  .icon-embed2 {
+    &:before {
+      content: $icon-embed2; 
+    }
+  }
+  .icon-facebook {
+    &:before {
+      content: $icon-facebook; 
+    }
+  }
+  .icon-instagram {
+    &:before {
+      content: $icon-instagram; 
+    }
+  }
+  .icon-twitter {
+    &:before {
+      content: $icon-twitter; 
+    }
+  }
+  .icon-linkedin2 {
+    &:before {
+      content: $icon-linkedin2; 
+    }
+  }

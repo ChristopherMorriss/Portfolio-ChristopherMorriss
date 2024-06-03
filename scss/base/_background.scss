@@ -1,13 +1,43 @@
 .banner{
     background-image: url("../img/professional.jpg"); 
     background-repeat: no-repeat;
-    background-size:100vh;
+    background-size: cover;
     height:100vh;
-//     @include flex(
-//         $flex-display,
-//         $flex-direction,
-//         $flex-wrap,
-//         $flex-align,
-//         $flex-justify:
-//         )
+    margin-top: 110px;
+    text-align:center;
+    @include flex(
+        $flex-display:flex,
+        $flex-direction:column,
+        $flex-wrap:wrap,
+        $flex-align:normal,
+        $flex-justify:space-between
+        );
 }
+
+.sticky-menu{
+    top:0px;
+    position:fixed;
+    width:100vw;
+    background-color: white;
+    border-bottom:4px solid $aqua_blue;
+    @extend %center;
+    @include flex(
+            $flex-display:flex,
+            $flex-direction:row,
+            $flex-wrap:nowrap,
+            $flex-align:center,
+            $flex-justify:space-between
+            );
+
+}
+
+#sticky-1{
+    @extend %center;
+}
+
+#sticky-2{
+    border-left:4px solid $aqua_blue;
+    @extend %center;
+    width:60%;
+}
+

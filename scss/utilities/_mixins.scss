@@ -15,3 +15,24 @@
 
 
 }
+
+//Mixin to replace the media query declarations 
+@mixin media($breakpoint){
+    @if $breakpoint == "medium"{
+        @media (min-width:$m) and (max-width:$l){
+            @content;
+        };
+    }
+
+    @else if $breakpoint =="large"{
+        @media (min-width: ($m + 1)){
+            @content;
+
+        };
+    }
+    @else if $breakpoint =="x-large"{
+        @media (min-width: $xl){
+            @content;
+        };
+    }
+}

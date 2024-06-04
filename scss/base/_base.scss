@@ -34,3 +34,10 @@ h1,h2, p{
 header, body, #sticky-menu{
     background-color:$bg-colour;
 }
+
+main{
+    @include media(x-large){
+        margin-left: 15%;
+    }
+}
+

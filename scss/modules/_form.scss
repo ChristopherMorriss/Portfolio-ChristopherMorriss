@@ -1,12 +1,5 @@
 form{
     @extend %center;
-    // @include flex(
-    //     $flex-display:flex,
-    //     $flex-direction:column,
-    //     $flex-wrap:nowrap,
-    //     $flex-align:center,
-    //     $flex-justify:space-between
-    //     );
     @include grid($g-display:grid,
                   $g-row:1fr,
                   $g-column:1fr,
@@ -14,6 +7,9 @@ form{
                   $gutter-column:0px);
     margin-left:20%;
     margin-right:20%;
+    @include media(x-large){
+        width:55vw;
+    }
     .form-object{
         margin-bottom: 10px;
     }
@@ -29,3 +25,21 @@ form{
 //             $flex-justify:space-between
 //             );
 // }
+
+.contact-info{
+    @include media(x-large){
+        @include flex(
+                $flex-display:flex,
+                $flex-direction:row,
+                $flex-wrap:nowrap,
+                $flex-align:center,
+                $flex-justify:flex-start,
+                );
+    }
+}
+
+.contact-msg{
+    @include media(x-large){
+        width:20vw;
+    }
+}

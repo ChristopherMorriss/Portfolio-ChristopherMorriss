@@ -3,7 +3,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height:100vh;
-    // margin-top: 84px;
     text-align:center;
     @include flex(
         $flex-display:flex,
@@ -28,21 +27,53 @@
             $flex-align:center,
             $flex-justify:space-between
             );
-
+    @include media(x-large){
+        width:15vw;
+        //height:100vh;
+        border-bottom: none;
+        border-right: 4px solid $aqua_blue;
+        @include flex(
+            $flex-display:flex,
+            $flex-direction:column,
+            $flex-wrap:nowrap,
+            $flex-align:center,
+            $flex-justify:flex-start,
+            );
+    }
 }
 
 #sticky-1{
     @extend %center;
     //border-right:4px solid $aqua_blue;
     //width:40%;
+    @include media(x-large){
+        //border-right:none;
+        //border-bottom: 4px solid $aqua_blue;
+        width:100%;
+    }
 }
 
 #sticky-2{
     border-left:4px solid $aqua_blue;
+    @include media(x-large){
+        border-left:none;
+        border-top:4px solid $aqua_blue;
+        width:100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom:4px solid $aqua_blue;
+    }
     @extend %center;
     width:60%;
+    height: 100%;
 }
 
 .intro{
-    @extend %margin-menu
+    @extend %margin-menu;
+}
+
+#contact{
+    @include media(x-large){
+        height:100vw;
+    }
 }

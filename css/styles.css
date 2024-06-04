@@ -10,6 +10,13 @@ h1, h2, p, .sticky-menu, #sticky-1, #sticky-2, form {
   margin-top: 84px;
 }
 
+@media (min-width: 1200px) {
+  /* line 7, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/utilities/_extends.scss */
+  .intro {
+    margin-top: 0px;
+  }
+}
+
 @font-face {
   font-family: "iconmoon";
   src: url("../fonts/iconmoon.eot?tl9t0p");
@@ -167,6 +174,13 @@ header, body, #sticky-menu {
   background-color: #eee9ee;
 }
 
+@media (min-width: 1200px) {
+  /* line 38, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+  main {
+    margin-left: 15%;
+  }
+}
+
 /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
 .banner {
   background-image: url("../img/background.jpg.crdownload");
@@ -181,7 +195,7 @@ header, body, #sticky-menu {
   justify-content: space-between;
 }
 
-/* line 17, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+/* line 16, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
 .sticky-menu {
   top: 0px;
   position: fixed;
@@ -195,10 +209,51 @@ header, body, #sticky-menu {
   justify-content: space-between;
 }
 
-/* line 40, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+@media (min-width: 1200px) {
+  /* line 16, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+  .sticky-menu {
+    width: 15vw;
+    border-bottom: none;
+    border-right: 4px solid #00FFFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 45, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+  #sticky-1 {
+    width: 100%;
+  }
+}
+
+/* line 56, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
 #sticky-2 {
   border-left: 4px solid #00FFFF;
   width: 60%;
+  height: 100%;
+}
+
+@media (min-width: 1200px) {
+  /* line 56, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+  #sticky-2 {
+    border-left: none;
+    border-top: 4px solid #00FFFF;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #00FFFF;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 75, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+  #contact {
+    height: 100vw;
+  }
 }
 
 /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_image.scss */
@@ -230,9 +285,34 @@ form {
   margin-right: 20%;
 }
 
-/* line 17, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+@media (min-width: 1200px) {
+  /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+  form {
+    width: 55vw;
+  }
+}
+
+/* line 13, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
 form .form-object {
   margin-bottom: 10px;
+}
+
+@media (min-width: 1200px) {
+  /* line 29, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 41, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+  .contact-msg {
+    width: 20vw;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

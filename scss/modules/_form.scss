@@ -15,16 +15,16 @@ form{
     }
 }
 
-// .name{
-//     @extend %center;
-//     @include flex(
-//             $flex-display:flex,
-//             $flex-direction:row,
-//             $flex-wrap:nowrap,
-//             $flex-align:center,
-//             $flex-justify:space-between
-//             );
-// }
+.name{
+    @extend %center;
+    @include flex(
+            $flex-display:flex,
+            $flex-direction:row,
+            $flex-wrap:nowrap,
+            $flex-align:center,
+            $flex-justify:space-between
+            );
+}
 
 .contact-info{
     @include media(x-large){
@@ -35,6 +35,9 @@ form{
                 $flex-align:center,
                 $flex-justify:flex-start,
                 );
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
     }
 }
 

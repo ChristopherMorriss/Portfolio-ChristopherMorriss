@@ -1,0 +1,17 @@
+.grid{
+   
+    @extend %center;
+    @include grid($g-display:grid,
+                  $g-row:1fr,
+                  $g-column:1fr 1fr 1fr,
+                  $gutter-row:10px,
+                  $gutter-column:10px);
+    margin-left:5%;
+    margin-right:5%;
+    margin-top: 10px;
+
+    // &-object{
+    //     width: 25vw;
+    // }
+   
+}

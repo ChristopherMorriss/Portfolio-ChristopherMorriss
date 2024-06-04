@@ -1,5 +1,5 @@
 /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/utilities/_extends.scss */
-h1, h2, p, .sticky-menu, #sticky-1, #sticky-2, form {
+h1, h2, p, .sticky-menu, #sticky-1, #sticky-2, .grid, form, .name {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -253,14 +253,27 @@ header, body, #sticky-menu {
   /* line 75, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
   #contact {
     height: 100vw;
+    padding-top: 20px;
   }
 }
 
 /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_image.scss */
 img {
   border-radius: 15px;
-  max-width: 100vw;
+  max-width: 20vw;
   max-height: 300px;
+}
+
+/* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
 }
 
 /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_icons.scss */
@@ -297,6 +310,15 @@ form .form-object {
   margin-bottom: 10px;
 }
 
+/* line 18, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+.name {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media (min-width: 1200px) {
   /* line 29, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
   .contact-info {
@@ -305,11 +327,14 @@ form .form-object {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 41, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+  /* line 44, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
   .contact-msg {
     width: 20vw;
   }

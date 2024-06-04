@@ -75,5 +75,6 @@
 #contact{
     @include media(x-large){
         height:100vw;
+        padding-top: 20px;
     }
 }

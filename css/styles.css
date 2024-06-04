@@ -1,1 +1,238 @@
-h1,h2,p,.sticky-menu,#sticky-1,#sticky-2,form{text-align:center;margin-left:auto;margin-right:auto}.intro{margin-top:84px}@font-face{font-family:"iconmoon";src:url("../fonts/iconmoon.eot?tl9t0p");src:url("../fonts/iconmoon.eot?tl9t0p#iefix") format("embedded-opentype"),url("../fonts/iconmoon.ttf?tl9t0p") format("truetype"),url("../fonts/iconmoon.woff?tl9t0p") format("woff"),url("../fonts/iconmoon.svg?tl9t0p#iconmoon") format("svg");font-weight:normal;font-style:normal;font-display:block;font-family:'open sans';src:url("../fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype")}[class^="icon-"],[class*=" icon-"]{font-family:"iconmoon" !important;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-star:before{content:"\e903";font-size:2em}.icon-paper-plane:before{content:"\e901"}.icon-send:before{content:"\e901"}.icon-cogs:before{content:"\e900"}.icon-bar-graph:before{content:"\e904"}.icon-mouse:before{content:"\e902"}.icon-phone_in_talk:before{content:"\e905"}.icon-security:before{content:"\e906"}.icon-school:before{content:"\e907"}.icon-display:before{content:"\e956"}.icon-bubble:before{content:"\e96b"}.icon-search:before{content:"\e986"}.icon-menu:before{content:"\e9bd"}.icon-embed2:before{content:"\ea80"}.icon-facebook:before{content:"\ea90"}.icon-instagram:before{content:"\ea92"}.icon-twitter:before{content:"\ea96"}.icon-linkedin2:before{content:"\eaca"}.open-sans-font{font-family:"Open Sans", sans-serif;font-optical-sizing:auto;font-weight:300;font-style:normal;font-variation-settings:"wdth" 100}*{box-sizing:border-box;font-family:'open sans', sans-serif}a{text-decoration:none;color:#000}a:hover{text-decoration:underline}button{max-width:100px}button:hover{cursor:pointer}header,body,#sticky-menu{background-color:#eee9ee}.banner{background-image:url("../img/background.jpg.crdownload");background-repeat:no-repeat;background-size:cover;height:100vh;text-align:center;display:flex;flex-direction:column;flex-wrap:wrap;align-items:normal;justify-content:space-between}.sticky-menu{top:0px;position:fixed;width:100vw;background-color:white;border-bottom:4px solid cyan;display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;justify-content:space-between}#sticky-2{border-left:4px solid cyan;width:60%}img{border-radius:15px;max-width:100vw;max-height:300px}.icons{color:aqua}.btn{border-radius:5px;text-align:center}form{display:grid;grid-template-columns:1fr;grid-template-rows:1fr;row-gap:10px;column-gap:0px;margin-left:20%;margin-right:20%}form .form-object{margin-bottom:10px}
+/* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/utilities/_extends.scss */
+h1, h2, p, .sticky-menu, #sticky-1, #sticky-2, form {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 7, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/utilities/_extends.scss */
+.intro {
+  margin-top: 84px;
+}
+
+@font-face {
+  font-family: "iconmoon";
+  src: url("../fonts/iconmoon.eot?tl9t0p");
+  src: url("../fonts/iconmoon.eot?tl9t0p#iefix") format("embedded-opentype"), url("../fonts/iconmoon.ttf?tl9t0p") format("truetype"), url("../fonts/iconmoon.woff?tl9t0p") format("woff"), url("../fonts/iconmoon.svg?tl9t0p#iconmoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  font-family: 'open sans';
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+/* line 16, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "iconmoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 31, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-star:before {
+  content: "\e903";
+  font-size: 2em;
+}
+
+/* line 37, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-paper-plane:before {
+  content: "\e901";
+}
+
+/* line 42, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-send:before {
+  content: "\e901";
+}
+
+/* line 47, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-cogs:before {
+  content: "\e900";
+}
+
+/* line 52, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-bar-graph:before {
+  content: "\e904";
+}
+
+/* line 57, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-mouse:before {
+  content: "\e902";
+}
+
+/* line 62, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-phone_in_talk:before {
+  content: "\e905";
+}
+
+/* line 67, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-security:before {
+  content: "\e906";
+}
+
+/* line 72, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-school:before {
+  content: "\e907";
+}
+
+/* line 77, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-display:before {
+  content: "\e956";
+}
+
+/* line 82, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-bubble:before {
+  content: "\e96b";
+}
+
+/* line 87, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-search:before {
+  content: "\e986";
+}
+
+/* line 92, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+/* line 97, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-embed2:before {
+  content: "\ea80";
+}
+
+/* line 102, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+/* line 107, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+/* line 112, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+/* line 117, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
+/* line 125, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+* {
+  box-sizing: border-box;
+  font-family: 'open sans', sans-serif;
+}
+
+/* line 6, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* line 9, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 14, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+button {
+  max-width: 100px;
+}
+
+/* line 15, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+button:hover {
+  cursor: pointer;
+}
+
+/* line 34, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+header, body, #sticky-menu {
+  background-color: #eee9ee;
+}
+
+/* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+.banner {
+  background-image: url("../img/background.jpg.crdownload");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: normal;
+  justify-content: space-between;
+}
+
+/* line 17, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+.sticky-menu {
+  top: 0px;
+  position: fixed;
+  width: 100vw;
+  background-color: white;
+  border-bottom: 4px solid #00FFFF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 40, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+#sticky-2 {
+  border-left: 4px solid #00FFFF;
+  width: 60%;
+}
+
+/* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_image.scss */
+img {
+  border-radius: 15px;
+  max-width: 100vw;
+  max-height: 300px;
+}
+
+/* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_icons.scss */
+.icons {
+  color: aqua;
+}
+
+/* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_buttons.scss */
+.btn {
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 10px;
+  column-gap: 0px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* line 17, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+form .form-object {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

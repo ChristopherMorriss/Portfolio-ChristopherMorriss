@@ -1,9 +1,9 @@
 .banner{
-    background-image: url("../img/professional.jpg"); 
+    background-image: url("../img/background.jpg.crdownload"); 
     background-repeat: no-repeat;
     background-size: cover;
     height:100vh;
-    margin-top: 84px;
+    // margin-top: 84px;
     text-align:center;
     @include flex(
         $flex-display:flex,
@@ -43,3 +43,6 @@
     width:60%;
 }
 
+.intro{
+    @extend %margin-menu
+}

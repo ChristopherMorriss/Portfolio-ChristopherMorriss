@@ -42,6 +42,13 @@
 #sticky-2{
     border-left:4px solid $aqua_blue;
     border-right:4px solid $aqua_blue;
+    @include flex(
+            $flex-display:flex,
+            $flex-direction:column,
+            $flex-wrap:nowrap,
+            $flex-align:center,
+            $flex-justify:space-between
+            );
     @include media(x-large){
         border-left:none;
         border-right:none;

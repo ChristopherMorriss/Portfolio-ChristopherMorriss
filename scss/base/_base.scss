@@ -19,14 +19,7 @@ button{
 }
 
 
-// img{
-//     top:0px;
-//     transition: ease;
-//     &:hover{
-//         top:-10px;
-//         transition: ease;
-//     }
-// }
+
 
 header, body, #sticky-menu{
     background-color:$bg-colour;
@@ -38,3 +31,8 @@ main{
     }
 }
 
+br{
+    @include media(medium){
+        display:none;
+    }
+}

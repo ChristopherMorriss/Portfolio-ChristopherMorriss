@@ -4,7 +4,7 @@ img{
     //     max-width: 20vw;
     //     max-height: 300px;
     // }
-    border-radius: 15px;
+    //border-radius: 15px;
     max-width: 90vw;
     max-height: 500px;
     
@@ -14,8 +14,8 @@ img{
     //     max-height: 500px;
     // }
     @include media(x-large){
-        border-radius: 15px;
-        max-width: 20vw;
+        //border-radius: 15px;
+        max-width: 25vw;
         max-height: 300px;
     }
     

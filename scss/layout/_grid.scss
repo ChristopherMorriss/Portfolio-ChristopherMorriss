@@ -1,18 +1,20 @@
 .grid{
-   
+   h1,h2{
+    margin-left:10px;
+   }
 
     @include grid($g-display:grid,
                   $g-row:1fr,
                   $g-column:1fr,
-                  $gutter-row:10px,
-                  $gutter-column:10px);
+                  $gutter-row:20px,
+                  $gutter-column:20px);
 
     @include media(x-large){
         @include grid($g-display:grid,
                     $g-row:1fr,
                     $g-column:1fr 1fr 1fr,
-                    $gutter-row:10px,
-                    $gutter-column:10px);
+                    $gutter-row:20px,
+                    $gutter-column:20px);
     }
     @extend %margin-percent;
     margin-top: 10px;
@@ -20,14 +22,23 @@
         @include grid($g-display:grid,
                   $g-row:1fr,
                   $g-column:1fr,
-                  $gutter-row:10px,
-                  $gutter-column:10px);
+                  $gutter-row:20px,
+                  $gutter-column:20px);
     }
 
      &-object{
-        width: 80vw;
+        width: 90vw;
+        border: 1px solid;
+        
         @include media(x-large){
             width:25vw;
+            position:relative;
+            top: 10px;
+            transition: .45s ease;
+            &:hover{
+                top:0px;
+                transition: .45s ease;
+            }
         }
     }
    

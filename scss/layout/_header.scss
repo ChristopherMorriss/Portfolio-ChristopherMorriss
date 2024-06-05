@@ -12,11 +12,26 @@
             $flex-align:center,
             $flex-justify:space-between
             );
+    @include media(large){
+        width:15vw;
+        height:100vh;
+        border-bottom: none;
+        border-right: 4px solid $aqua_blue;
+
+        @include flex(
+            $flex-display:flex,
+            $flex-direction:column,
+            $flex-wrap:nowrap,
+            $flex-align:center,
+            $flex-justify:flex-start,
+            );
+    }
     @include media(x-large){
         width:15vw;
         //height:100vh;
         border-bottom: none;
         border-right: 4px solid $aqua_blue;
+    
         @include flex(
             $flex-display:flex,
             $flex-direction:column,
@@ -47,8 +62,17 @@
             $flex-direction:column,
             $flex-wrap:nowrap,
             $flex-align:center,
-            $flex-justify:space-between
+            $flex-justify:space-around,
             );
+    @include media(large){
+        border-left:none;
+        border-right:none;
+        border-top:4px solid $aqua_blue;
+        width:100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom:4px solid $aqua_blue;
+        }
     @include media(x-large){
         border-left:none;
         border-right:none;

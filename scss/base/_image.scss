@@ -10,7 +10,7 @@ img{
     
     @include media(large){
         //border-radius: 15px;
-        max-width: 45vw;
+        max-width: 35vw;
         max-height: 400px;
     }
     @include media(x-large){

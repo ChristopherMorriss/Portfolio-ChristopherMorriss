@@ -10,6 +10,13 @@
   margin-top: 84px;
 }
 
+@media (min-width: 993px) {
+  /* line 7, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/utilities/_extends.scss */
+  .intro {
+    margin-top: 0px;
+  }
+}
+
 @media (min-width: 1200px) {
   /* line 7, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/utilities/_extends.scss */
   .intro {
@@ -17,8 +24,8 @@
   }
 }
 
-/* line 14, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/utilities/_extends.scss */
-.grid, form, .contact-info, .contact-msg {
+/* line 19, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/utilities/_extends.scss */
+.grid, .space, form, .contact-info, .contact-msg {
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -180,6 +187,13 @@ header, body, #sticky-menu {
   background-color: #eee9ee;
 }
 
+@media (min-width: 993px) {
+  /* line 28, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+  main {
+    margin-left: 15%;
+  }
+}
+
 @media (min-width: 1200px) {
   /* line 28, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
   main {
@@ -188,14 +202,14 @@ header, body, #sticky-menu {
 }
 
 @media (min-width: 993px) {
-  /* line 34, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+  /* line 37, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
   br {
     display: none;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 34, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+  /* line 37, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
   br {
     display: none;
   }
@@ -232,7 +246,7 @@ img {
 @media (min-width: 993px) {
   /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_image.scss */
   img {
-    max-width: 45vw;
+    max-width: 35vw;
     max-height: 400px;
   }
 }
@@ -307,7 +321,7 @@ img {
 @media (min-width: 993px) {
   /* line 42, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
   .grid-object {
-    width: 45vw;
+    width: 35vw;
   }
 }
 
@@ -340,6 +354,21 @@ img {
   justify-content: space-between;
 }
 
+@media (min-width: 993px) {
+  /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  .sticky-menu {
+    width: 15vw;
+    height: 100vh;
+    border-bottom: none;
+    border-right: 4px solid #00FFFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
 @media (min-width: 1200px) {
   /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   .sticky-menu {
@@ -354,12 +383,12 @@ img {
   }
 }
 
-/* line 30, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+/* line 45, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
 #sticky-1 {
   width: 50%;
 }
 
-/* line 42, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+/* line 57, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
 #sticky-2 {
   border-left: 4px solid #00FFFF;
   border-right: 4px solid #00FFFF;
@@ -367,13 +396,26 @@ img {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 50%;
   height: 100%;
 }
 
+@media (min-width: 993px) {
+  /* line 57, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  #sticky-2 {
+    border-left: none;
+    border-right: none;
+    border-top: 4px solid #00FFFF;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #00FFFF;
+  }
+}
+
 @media (min-width: 1200px) {
-  /* line 42, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  /* line 57, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   #sticky-2 {
     border-left: none;
     border-right: none;

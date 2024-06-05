@@ -6,8 +6,13 @@
 
 %margin-menu{
      margin-top: 84px;
+     @include media(large){
+        margin-top:0px;
+     
+    }
      @include media(x-large){
         margin-top:0px;
+     
     }
 }
 

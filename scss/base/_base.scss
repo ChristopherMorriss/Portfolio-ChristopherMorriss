@@ -26,6 +26,9 @@ header, body, #sticky-menu{
 }
 
 main{
+    @include media(large){
+        margin-left: 15%;
+    }
     @include media(x-large){
         margin-left: 15%;
     }

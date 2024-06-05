@@ -18,14 +18,20 @@
 
 //Mixin to replace the media query declarations 
 @mixin media($breakpoint){
-    @if $breakpoint == "medium"{
-        @media (min-width:$m) and (max-width:$l){
+
+    @if $breakpoint =="small"{
+        @media (min-width:$sm){
+            @content;
+        }
+    }
+    @else if $breakpoint == "medium"{
+        @media (min-width:$m) and (max-width:$lg){
             @content;
         };
     }
 
     @else if $breakpoint =="large"{
-        @media (min-width: ($m + 1)){
+        @media (min-width: ($lg + 1)){
             @content;
 
         };

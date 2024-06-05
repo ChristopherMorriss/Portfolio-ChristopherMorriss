@@ -1,12 +1,12 @@
 form{
     @extend %center;
+    @extend %margin-percent;
     @include grid($g-display:grid,
                   $g-row:1fr,
                   $g-column:1fr,
                   $gutter-row:10px,
                   $gutter-column:0px);
-    margin-left:20%;
-    margin-right:20%;
+
     @include media(x-large){
         width:55vw;
     }
@@ -16,7 +16,7 @@ form{
 }
 
 .name{
-    @extend %center;
+    //@extend %center;
     @include flex(
             $flex-display:flex,
             $flex-direction:row,
@@ -24,6 +24,9 @@ form{
             $flex-align:center,
             $flex-justify:space-between
             );
+    #f-name, #l-name{
+        width:48%;
+    }
 }
 
 .contact-info{
@@ -35,14 +38,13 @@ form{
                 $flex-align:center,
                 $flex-justify:flex-start,
                 );
-        margin-left: 10%;
-        margin-right: 10%;
-        text-align: center;
     }
+    @extend %margin-percent;
 }
 
 .contact-msg{
     @include media(x-large){
         width:20vw;
     }
+    @extend %margin-percent;
 }

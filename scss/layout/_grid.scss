@@ -1,17 +1,34 @@
 .grid{
    
-    @extend %center;
+
     @include grid($g-display:grid,
                   $g-row:1fr,
-                  $g-column:1fr 1fr 1fr,
+                  $g-column:1fr,
                   $gutter-row:10px,
                   $gutter-column:10px);
-    margin-left:5%;
-    margin-right:5%;
-    margin-top: 10px;
 
-    // &-object{
-    //     width: 25vw;
-    // }
+    @include media(x-large){
+        @include grid($g-display:grid,
+                    $g-row:1fr,
+                    $g-column:1fr 1fr 1fr,
+                    $gutter-row:10px,
+                    $gutter-column:10px);
+    }
+    @extend %margin-percent;
+    margin-top: 10px;
+    @include media(medium){
+        @include grid($g-display:grid,
+                  $g-row:1fr,
+                  $g-column:1fr,
+                  $gutter-row:10px,
+                  $gutter-column:10px);
+    }
+
+     &-object{
+        width: 80vw;
+        @include media(x-large){
+            width:25vw;
+        }
+    }
    
 }

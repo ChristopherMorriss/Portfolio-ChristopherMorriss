@@ -1,5 +1,22 @@
 img{
+    // @include media(small){
+    //     border-radius: 15px;
+    //     max-width: 20vw;
+    //     max-height: 300px;
+    // }
     border-radius: 15px;
-    max-width: 20vw;
-    max-height: 300px;
+    max-width: 90vw;
+    max-height: 500px;
+    
+    // @include media(medium){
+    //     border-radius: 15px;
+    //     max-width: 90vw;
+    //     max-height: 500px;
+    // }
+    @include media(x-large){
+        border-radius: 15px;
+        max-width: 20vw;
+        max-height: 300px;
+    }
+    
 }

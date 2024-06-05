@@ -8,11 +8,11 @@ img{
     max-width: 90vw;
     max-height: 500px;
     
-    // @include media(medium){
-    //     border-radius: 15px;
-    //     max-width: 90vw;
-    //     max-height: 500px;
-    // }
+    @include media(large){
+        //border-radius: 15px;
+        max-width: 45vw;
+        max-height: 400px;
+    }
     @include media(x-large){
         //border-radius: 15px;
         max-width: 25vw;

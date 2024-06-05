@@ -32,7 +32,10 @@ main{
 }
 
 br{
-    @include media(medium){
+    @include media(large){
+        display:none;
+    }
+    @include media(x-large){
         display:none;
     }
 }

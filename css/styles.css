@@ -187,7 +187,14 @@ header, body, #sticky-menu {
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 993px) {
+  /* line 34, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+  br {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
   /* line 34, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
   br {
     display: none;
@@ -222,6 +229,14 @@ img {
   max-height: 500px;
 }
 
+@media (min-width: 993px) {
+  /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_image.scss */
+  img {
+    max-width: 45vw;
+    max-height: 400px;
+  }
+}
+
 @media (min-width: 1200px) {
   /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_image.scss */
   img {
@@ -245,15 +260,9 @@ img {
   margin-left: 10px;
 }
 
-@media (min-width: 1200px) {
-  /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    row-gap: 20px;
-    column-gap: 20px;
-  }
+/* line 5, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
+.grid a {
+  text-decoration: none;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -267,21 +276,50 @@ img {
   }
 }
 
-/* line 29, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
+@media (min-width: 993px) {
+  /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+}
+
+/* line 42, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
 .grid-object {
   width: 90vw;
   border: 1px solid;
 }
 
+@media (min-width: 993px) {
+  /* line 42, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
+  .grid-object {
+    width: 45vw;
+  }
+}
+
 @media (min-width: 1200px) {
-  /* line 29, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
+  /* line 42, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
   .grid-object {
     width: 25vw;
     position: relative;
     top: 10px;
     transition: .45s ease;
   }
-  /* line 38, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
+  /* line 55, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
   .grid-object:hover {
     top: 0px;
     transition: .45s ease;
@@ -398,6 +436,11 @@ form .form-object {
   width: 48%;
 }
 
+/* line 32, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+.contact-info {
+  margin-top: 25px;
+}
+
 @media (min-width: 1200px) {
   /* line 32, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
   .contact-info {
@@ -409,10 +452,21 @@ form .form-object {
   }
 }
 
+@media (min-width: 993px) {
+  /* line 32, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
 @media (min-width: 1200px) {
-  /* line 45, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+  /* line 56, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
   .contact-msg {
-    width: 20vw;
+    width: 33vw;
   }
 }
 

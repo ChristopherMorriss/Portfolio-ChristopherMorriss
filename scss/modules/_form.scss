@@ -39,12 +39,23 @@ form{
                 $flex-justify:flex-start,
                 );
     }
+    @include media(large){
+        @include flex(
+                $flex-display:flex,
+                $flex-direction:row,
+                $flex-wrap:nowrap,
+                $flex-align:center,
+                $flex-justify:flex-start,
+                );
+    }
+    margin-top:25px;
     @extend %margin-percent;
+    
 }
 
 .contact-msg{
     @include media(x-large){
-        width:20vw;
+        width:33vw;
     }
     @extend %margin-percent;
-}
+};

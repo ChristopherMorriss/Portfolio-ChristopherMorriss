@@ -2,12 +2,31 @@
    h1,h2{
     margin-left:10px;
    }
+   a{
+    text-decoration: none;
+   }
 
     @include grid($g-display:grid,
                   $g-row:1fr,
                   $g-column:1fr,
                   $gutter-row:20px,
                   $gutter-column:20px);
+
+    @include media(medium){
+        @include grid($g-display:grid,
+                      $g-row:1fr,
+                      $g-column:1fr,
+                      $gutter-row:20px,
+                      $gutter-column:20px);
+                }
+    
+    @include media(large){
+        @include grid($g-display:grid,
+                      $g-row:1fr,
+                      $g-column:1fr 1fr,
+                      $gutter-row:20px,
+                      $gutter-column:20px);
+                }
 
     @include media(x-large){
         @include grid($g-display:grid,
@@ -18,17 +37,15 @@
     }
     @extend %margin-percent;
     margin-top: 10px;
-    @include media(medium){
-        @include grid($g-display:grid,
-                  $g-row:1fr,
-                  $g-column:1fr,
-                  $gutter-row:20px,
-                  $gutter-column:20px);
-    }
+    
 
-     &-object{
+    &-object{
         width: 90vw;
         border: 1px solid;
+
+        @include media(large){
+            width:45vw;
+        }
         
         @include media(x-large){
             width:25vw;

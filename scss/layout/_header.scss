@@ -23,12 +23,11 @@
             $flex-direction:column,
             $flex-wrap:nowrap,
             $flex-align:center,
-            $flex-justify:flex-start,
+            $flex-justify:space-around
             );
     }
     @include media(x-large){
         width:15vw;
-        //height:100vh;
         border-bottom: none;
         border-right: 4px solid $aqua_blue;
     

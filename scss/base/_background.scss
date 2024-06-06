@@ -19,6 +19,14 @@
     @extend %margin-menu;
 }
 
+.intro2{
+    //margin-top:160px;
+    @extend %margin-menu2;
+}
+
+
+
+
 #contact{
     @include media(x-large){
         height:100vw;

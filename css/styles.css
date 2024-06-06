@@ -25,6 +25,25 @@
 }
 
 /* line 19, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/utilities/_extends.scss */
+.intro2 {
+  margin-top: 160px;
+}
+
+@media (min-width: 993px) {
+  /* line 19, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/utilities/_extends.scss */
+  .intro2 {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 19, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/utilities/_extends.scss */
+  .intro2 {
+    margin-top: 0px;
+  }
+}
+
+/* line 32, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/utilities/_extends.scss */
 .grid, .space, form, .contact-info, .contact-msg {
   margin-left: 5%;
   margin-right: 5%;
@@ -230,7 +249,7 @@ header, body, #sticky-menu {
 }
 
 @media (min-width: 1200px) {
-  /* line 22, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+  /* line 30, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
   #contact {
     height: 100vw;
     padding-top: 20px;

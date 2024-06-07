@@ -16,18 +16,6 @@
     }
 }
 
-%margin-menu2{
-    margin-top: 160px;
-    @include media(large){
-       margin-top:0px;
-    
-   }
-    @include media(x-large){
-       margin-top:0px;
-    
-   }
-}
-
 
 %margin-percent{
     margin-left:5%;

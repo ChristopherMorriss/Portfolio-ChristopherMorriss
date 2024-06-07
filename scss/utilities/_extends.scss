@@ -1,10 +1,10 @@
-%center{
+%center{ 
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-%margin-menu{
+%margin-menu{ //Used to solve issue caused by the sticky footer at the top of the page for smaller viewports
      margin-top: 84px;
      @include media(large){
         margin-top:0px;
@@ -17,7 +17,7 @@
 }
 
 
-%margin-percent{
+%margin-percent{ //Creates a consistent margin on both sides 
     margin-left:5%;
     margin-right:5%;
 }

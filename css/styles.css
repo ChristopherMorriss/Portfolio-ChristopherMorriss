@@ -202,17 +202,22 @@ header, body, #sticky-menu {
 }
 
 @media (min-width: 993px) {
-  /* line 37, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
-  br {
+  /* line 38, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+  br .long {
     display: none;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 37, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
-  br {
+  /* line 38, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+  br .long {
     display: none;
   }
+}
+
+/* line 48, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+html {
+  scroll-behavior: smooth;
 }
 
 /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
@@ -466,7 +471,7 @@ img {
 
 /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_icons.scss */
 .icons {
-  color: aqua;
+  color: #00FFFF;
 }
 
 /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_buttons.scss */
@@ -543,7 +548,7 @@ form .form-object {
 }
 
 @media (min-width: 1200px) {
-  /* line 56, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+  /* line 57, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
   .contact-msg {
     width: 33vw;
   }

@@ -1,7 +1,7 @@
 .sticky-menu{
     top:0px;
     position:fixed;
-    width:100vw;
+    width:100vw; //Sets the menu to take up the full width of the page at the smaller breakpoints
     background-color: white;
     border-bottom:4px solid $aqua_blue;
     @extend %center;
@@ -13,7 +13,7 @@
             $flex-justify:space-between
             );
     @include media(large){
-        width:15vw;
+        width:15vw; //Sets the menu to take up only 15% of the width of page, but takes up the whole height of the page
         height:100vh;
         border-bottom: none;
         border-right: 4px solid $aqua_blue;

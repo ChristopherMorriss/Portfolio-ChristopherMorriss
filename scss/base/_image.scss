@@ -1,15 +1,8 @@
-img{
-    // @include media(small){
-    //     border-radius: 15px;
-    //     max-width: 20vw;
-    //     max-height: 300px;
-    // }
-    //border-radius: 15px;
-    max-width: 90vw;
+img{ //Restricts the amount of space that an img element can take up
+    max-width: 90vw; 
     max-height: 500px;
     
     @include media(large){
-        //border-radius: 15px;
         max-width: 35vw;
         max-height: 400px;
     }

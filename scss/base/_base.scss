@@ -25,7 +25,7 @@ header, body, #sticky-menu{
     background-color:$bg-colour;
 }
 
-main{
+main{ //Used to prevent the first 15% of the content of the page from displaying underneath the fixed menu
     @include media(large){
         margin-left: 15%;
     }
@@ -34,11 +34,17 @@ main{
     }
 }
 
-br{
-    @include media(large){
-        display:none;
+br{ 
+    .long{ //Used to put 'Netmatters' and 'Homepage' on the same line when there is enough space
+        @include media(large){
+            display:none;
+        }
+        @include media(x-large){
+            display:none;
+        }
     }
-    @include media(x-large){
-        display:none;
-    }
+}
+
+html{ 
+    scroll-behavior: smooth;
 }

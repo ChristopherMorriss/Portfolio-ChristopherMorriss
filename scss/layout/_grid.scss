@@ -1,9 +1,9 @@
 .grid{
    h1,h2{
-    margin-left:10px;
+    margin-left:10px; 
    }
    a{
-    text-decoration: none;
+    text-decoration: none; //Removes underline from hyperlinks
    }
 
     @include grid($g-display:grid,
@@ -23,7 +23,7 @@
     @include media(large){
         @include grid($g-display:grid,
                       $g-row:1fr,
-                      $g-column:1fr 1fr,
+                      $g-column:1fr 1fr, //For the second largest breakpoint, displays a 2x3 grid
                       $gutter-row:20px,
                       $gutter-column:20px);
                 }
@@ -31,7 +31,7 @@
     @include media(x-large){
         @include grid($g-display:grid,
                     $g-row:1fr,
-                    $g-column:1fr 1fr 1fr,
+                    $g-column:1fr 1fr 1fr, //For the largest breakpoint, displays a 3x2 grid
                     $gutter-row:20px,
                     $gutter-column:20px);
     }
@@ -44,11 +44,11 @@
         border: 1px solid;
 
         @include media(large){
-            width:35vw;
+            width:35vw; //Changes the width to 35% to allow 2 grid items to fit on one line at second largest breakpoint
         }
         
         @include media(x-large){
-            width:25vw;
+            width:25vw; //Changes the width to 35% to allow 2 grid items to fit on one line at largest breakpoint
             position:relative;
             top: 10px;
             transition: .45s ease;

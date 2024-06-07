@@ -25,11 +25,12 @@ form{
             $flex-justify:space-between
             );
     #f-name, #l-name{
-        width:48%;
+        width:48%; //Gives a small gap of 4% viewport width between the boxes for First and Last name, which are on the same line
     }
 }
 
-.contact-info{
+.contact-info{ //For both of the largest viewports, this is displayed next to the contact message class
+               //For the other viewports, this is displayed underneath the contact message class
     @include media(x-large){
         @include flex(
                 $flex-display:flex,
@@ -55,7 +56,7 @@ form{
 
 .contact-msg{
     @include media(x-large){
-        width:33vw;
+        width:33vw; //The short width of the contact message class makes sure that the contact info grid fits on the page
     }
     @extend %margin-percent;
 };

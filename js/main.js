@@ -1,51 +1,40 @@
-// var i = 0;
-// var txt = 'Lorem ipsum typing effect!'; /* The text */
-// var speed = 5000; /* The speed/duration of the effect in milliseconds */
+let i = 0;
+let txt = $('.chris-name').text();
+$('.chris-name').css('display','none'); //Hides the original text, to prevent showing of duplication of name
+$('.chris-name').text(''); //Removes the html code when JavaScript is enabled only, it is rewritten using the function
+$('.chris-name').css('display','block'); //Shows the type animation generated text only
+console.log(txt); //Used to test if the txt variable is being assigned to the correct information
+let speed = 100; // The speed/duration of the effect in milliseconds
 
-// function typeWriter() {
-//   while (i < txt.length) {
-//     document.getElementById("demo").innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-//   }
-// }
-// typeWriter();
-var typeText = document.querySelector(".typeText")
-var textToBeTyped = "a software engineer"
-var index = 0, isAdding = true
+function typeWritername() {
+   if (i < txt.length) {
+    document.querySelector(".chris-name").innerHTML += txt.charAt(i); //Adds a letter at a time to the specified class
+    
 
-function playAnim() {
-  setTimeout(function () {
-    // set the text of typeText to a substring of
-    // the textToBeTyped using index.
-    typeText.innerText = textToBeTyped.slice(0, index)
-    while (isAdding) {
-      // adding text
-      if (index > textToBeTyped.length) {
-        // no more text to add
-        isAdding = false
-        //break: wait 2s before playing again
-        setTimeout( function () {
-          playAnim()
-        }, 2000)
-        return
-      } else {
-        // increment index by 1
-        index++
-      }
-    } else {
-      // removing text
-      if (index === 0) {
-        // no more text to remove
-        isAdding = true
-      } else {
-        // decrement index by 1
-        index--
-      }
-    }
-    // call itself
-    playAnim()
-  }, 120)
+    i++;
+    setTimeout(typeWritername, speed);
+  }
+  
 }
-// start animation
-playAnim()
+let j = 0;
+let txt2 = $('.nav-page').text();
+$('.nav-page').css('display','none'); //Hides the original text, to prevent showing of duplication of name
+$('.nav-page').text(''); //Removes the html code when JavaScript is enabled only, it is rewritten using the function
+$('.nav-page').css('display','block'); //Shows the type animation generated text only
+console.log(txt2); //Used to test if the txt variable is being assigned to the correct information
+function typeWriternav() {
+  if (j < txt2.length) {
+   document.querySelector(".nav-page").innerHTML += txt2.charAt(j); //Adds a letter at a time to the specified class
+   
+
+   j++;
+   setTimeout(typeWriternav, speed);
+ }
+ 
+}
+typeWritername();
+typeWriternav();
+
+
+
+

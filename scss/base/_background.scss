@@ -9,7 +9,7 @@
         $flex-direction:column,
         $flex-wrap:wrap,
         $flex-align:normal,
-        $flex-justify:space-between
+        $flex-justify:space-around
         );
     margin-bottom:20px;
 }
@@ -23,18 +23,24 @@
 .alt-menu{
     border: 1px solid white;
     background-color: black;
-    width:70px;
-    height:70px;
-    font-size: 60px;
+    top:0px;
+    left:0px;
+    width:20vw;
+    height:8vh;
+    font-size: 40px;
     color:white;
     position:fixed;
     @extend %center;
 
-    @include media(medium){
-        width:10%;
+    @include media(small){
+        width:10vw;
+        height:10vh;
         font-size: 60px;
+       
     };
-
+    @include media(medium){
+        
+    };
     @include media(large){
         display:none;
     };

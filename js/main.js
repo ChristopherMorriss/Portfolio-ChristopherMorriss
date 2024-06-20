@@ -50,3 +50,39 @@ slideOutMenu.addEventListener('click',()=>{
 });
 
 
+
+
+$('#submit').click(function(){
+  let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}'); //Email regex
+  //let regex2 = new RegExp^(?:\+44|0)(?:\d{9}|\d{10}|\d{11}|\d{12})$; //Phone regex
+  const fnombre =$('#f-name').val();
+  const lnombre= $('#l-name').val();
+  const email1 = $('#email').val();
+  const subject1 = $('#subject').val();
+  const textarea1 = $('#message-textarea').val();
+  const test1= regex.test(email1);
+  //alert(test1);
+  if (fnombre===''){
+    alert('Please enter your first name: this is required.')
+  }
+  if (lnombre===''){
+    alert('Please enter your last name: this is required.')
+  }
+  if (email1=== ''){
+    alert('Please enter your email address: this is required.');
+  }
+  else{
+    if (test1 === 'true'){
+      alert('Email address validated.');
+    }
+    else {
+      alert('Invalid email.');
+    }
+  }
+
+ });
+
+
+
+ 
+

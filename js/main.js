@@ -35,6 +35,18 @@ function typeWriternav() {
 typeWritername();
 typeWriternav();
 
-
+let hideOrShow=0 //Variable used to check what should happen after the menu is clicked
+                 //It's a boolean variable so it could be represented with true (1) and false (0) instead
+let slideOutMenu = document.querySelector('.alt-menu');
+slideOutMenu.addEventListener('click',()=>{
+  if (hideOrShow===0){ //If hideOrShow variable =0 (is off) when clicked, display the menu 
+    hideOrShow +=1; //The hideOrShow variable is now on
+    $('#sticky-3').css('display','block')
+  }
+  else if (hideOrShow===1){ //If hideOrShow variable =1 (is on) when clicked, hide the menu
+    hideOrShow -=1; //The hideOrShow variable is now off
+    $('#sticky-3').css('display','none')
+  }
+});
 
 

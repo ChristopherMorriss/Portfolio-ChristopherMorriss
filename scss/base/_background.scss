@@ -20,7 +20,28 @@
 //     @extend %margin-menu;
 // }
 
+.alt-menu{
+    border: 1px solid white;
+    background-color: black;
+    width:70px;
+    height:70px;
+    font-size: 60px;
+    color:white;
+    position:fixed;
+    @extend %center;
 
+    @include media(medium){
+        width:10%;
+        font-size: 60px;
+    };
+
+    @include media(large){
+        display:none;
+    };
+    @include media(x-large){
+        display:none;
+    };
+}
 
 
 

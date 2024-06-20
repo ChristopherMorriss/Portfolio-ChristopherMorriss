@@ -1,5 +1,5 @@
 /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/utilities/_extends.scss */
-#bottom, #sticky-1, #sticky-2, .alt-menu, form {
+.alt-menu, #bottom, #sticky-1, #sticky-2, form {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -216,8 +216,41 @@ html {
   margin-bottom: 20px;
 }
 
+/* line 23, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+.alt-menu {
+  border: 1px solid white;
+  background-color: black;
+  width: 70px;
+  height: 70px;
+  font-size: 60px;
+  color: white;
+  position: fixed;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* line 23, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+  .alt-menu {
+    width: 10%;
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 993px) {
+  /* line 23, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+  .alt-menu {
+    display: none;
+  }
+}
+
 @media (min-width: 1200px) {
-  /* line 27, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+  /* line 23, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
+  .alt-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 48, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
   #contact {
     height: 100vw;
     padding-top: 20px;
@@ -462,36 +495,13 @@ img {
 }
 
 /* line 138, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
-.alt-menu {
-  border: 1px solid white;
-  background-color: black;
-  width: 70px;
-  height: 70px;
-  font-size: 60px;
-  color: white;
-  position: fixed;
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  /* line 138, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
-  .alt-menu {
-    width: 10%;
-    font-size: 60px;
-  }
-}
-
-@media (min-width: 993px) {
-  /* line 138, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
-  .alt-menu {
-    display: none;
-  }
-}
-
-@media (min-width: 1200px) {
-  /* line 138, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
-  .alt-menu {
-    display: none;
-  }
+#sticky-3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
 }
 
 /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_icons.scss */

@@ -49,15 +49,6 @@ slideOutMenu.addEventListener('click',()=>{
   }
 });
 
-
-// $('#required-fname').css('display','none');
-// $('#required-lname').css('display','none');
-$('#required-email').css('display','none');
-
-
- 
- 
-
 function validateForm(){
   let regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
   //let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}'); // This is the orignial regex I used, above is new version
@@ -65,20 +56,19 @@ function validateForm(){
   let fnombre =$('#f-name').val();
   let lnombre= $('#l-name').val();
   let email1 = $('#email').val();
-  let subject1 = $('#subject').val();
-  let textarea1 = $('#message-textarea').val();
+  let subject1 = $('#subject').val(); //Stores the subject value, but I do not use this info for anything yet
+  let textarea1 = $('#message-textarea').val(); //Stores the textarea value, but I do not use this info for anything yet
   let test1= regex.test(email1);
-  //alert(test1);
-  if (fnombre===''){
-    $(".name-warning").html('<small id="required-fname">Please enter your first name</small><br>')
-    //alert('Please enter your first name: this is required.');
+
+  if (fnombre==='' || lnombre===''){ //If at least one of the boxes is empty, the prompt will be given
+    //$('#required-name').css('display','block');
+    alert('Please enter your full name');
   }
-  if (lnombre===''){
-    $(".name-warning").html('<small id="required-lname">Please enter your second name</small>')
-    //alert('Please enter your last name: this is required.');
-  }
+  
   if (email1=== ''){
+    $('#required-email').css('display','block');
     alert('Please enter your email address: this is required.');
+    
   }
   else{
     if (test1 === true){
@@ -89,3 +79,9 @@ function validateForm(){
     }
   }
 }
+
+
+input.value='Please enter your first name';
+item.textContent=input.value;
+origin.append(item);
+console.log(item);

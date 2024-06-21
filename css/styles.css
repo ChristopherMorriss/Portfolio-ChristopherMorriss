@@ -605,4 +605,9 @@ form #f-label, form #l-label {
   }
 }
 
+/* line 85, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+#required-email {
+  display: none;
+}
+
 /*# sourceMappingURL=styles.css.map */

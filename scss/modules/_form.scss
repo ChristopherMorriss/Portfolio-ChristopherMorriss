@@ -75,3 +75,13 @@ form{
     }
     @extend %margin-percent;
 };
+
+// The code below hides the warning message so that it is not displayed until certain conditions are met in javascript
+// It are commented out because I have removed the message to prevent layout issues
+// #required-name{
+//  display:none;
+//}
+
+#required-email{ //This message does not have an impact on the layout, so it is not commented out
+    display:none;
+};

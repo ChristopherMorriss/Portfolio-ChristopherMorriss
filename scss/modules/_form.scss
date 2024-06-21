@@ -1,5 +1,5 @@
 form{
-    @extend %center;
+    //@extend %center;
     @extend %margin-percent;
     @include grid($g-display:grid,
                   $g-row:1fr,
@@ -13,6 +13,21 @@ form{
     .form-object{
         margin-bottom: 10px;
     }
+    .name-label{
+        @include flex(
+            $flex-display:flex,
+            $flex-direction:row,
+            $flex-wrap:nowrap,
+            $flex-align:center,
+            $flex-justify:flex-start
+            );
+        
+    }
+    #f-label, #l-label{
+        width:52%;
+    }
+    
+    
 }
 
 .name{

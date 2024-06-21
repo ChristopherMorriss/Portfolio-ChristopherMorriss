@@ -59,7 +59,7 @@
             <a href="coming-soon.html">
                 <div class="grid-object">
                     <img src="img/placeholder-code.png" alt="placeholder image">
-                    <h1>Netmatters <br class="long">Homepage</h1>
+                    <h1>Netmatters Home</h1>
                     <h2>View Project &ShortRightArrow;</h2>
                 </div>
             </a>
@@ -109,14 +109,27 @@
                 <p>Contact me during the hours 9:00am-11:30am or 1:00pm-4:00pm for the quickest response</p>
             </div>
             <form>
+                <div class="name-label">
+                    <label for="f-name" id="f-label">First Name:</label>
+                    <label for="l-name">Last Name:</label>
+                </div>
                 <div class="name">
                     <input type="text" id="f-name" class="form-object" placeholder="First Name*">
                     <input type="text" id="l-name" class="form-object" placeholder="Last Name*">
+                    <!-- These are small to prevent the size from breaking the layout of the page -->
+                    <!-- <small id="required-fname">Please enter your first name</small><br>
+                    <small id="required-lname">Please enter your second name</small>  -->
                 </div>
+                <div class="name-warning"></div>
+                
+                <label>Email:</label> 
                 <input type="text" id="email" class="form-object" placeholder="Email Address*">
+                <small id="required-email">Please enter a valid email</small>
+                <label>Subject:</label>
                 <input type="text" id="subject" class="form-object" placeholder="Subject">
+                <label>Message:</label> 
                 <textarea id="message-textarea" placeholder="Message" class="form-object"></textarea>
-                <button class="btn" class="form-object" id="submit">Submit</button>
+                <button class="btn" class="form-object" id="submit" onclick="validateForm()">Submit</button>
             </form>
         </div>
         </main> 

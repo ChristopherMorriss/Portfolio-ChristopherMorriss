@@ -50,39 +50,42 @@ slideOutMenu.addEventListener('click',()=>{
 });
 
 
+// $('#required-fname').css('display','none');
+// $('#required-lname').css('display','none');
+$('#required-email').css('display','none');
 
 
-$('#submit').click(function(){
-  let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}'); //Email regex
+ 
+ 
+
+function validateForm(){
+  let regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
+  //let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}'); // This is the orignial regex I used, above is new version
   //let regex2 = new RegExp^(?:\+44|0)(?:\d{9}|\d{10}|\d{11}|\d{12})$; //Phone regex
-  const fnombre =$('#f-name').val();
-  const lnombre= $('#l-name').val();
-  const email1 = $('#email').val();
-  const subject1 = $('#subject').val();
-  const textarea1 = $('#message-textarea').val();
-  const test1= regex.test(email1);
+  let fnombre =$('#f-name').val();
+  let lnombre= $('#l-name').val();
+  let email1 = $('#email').val();
+  let subject1 = $('#subject').val();
+  let textarea1 = $('#message-textarea').val();
+  let test1= regex.test(email1);
   //alert(test1);
   if (fnombre===''){
-    alert('Please enter your first name: this is required.')
+    $(".name-warning").html('<small id="required-fname">Please enter your first name</small><br>')
+    //alert('Please enter your first name: this is required.');
   }
   if (lnombre===''){
-    alert('Please enter your last name: this is required.')
+    $(".name-warning").html('<small id="required-lname">Please enter your second name</small>')
+    //alert('Please enter your last name: this is required.');
   }
   if (email1=== ''){
     alert('Please enter your email address: this is required.');
   }
   else{
-    if (test1 === 'true'){
+    if (test1 === true){
       alert('Email address validated.');
     }
     else {
       alert('Invalid email.');
     }
   }
-
- });
-
-
-
- 
-
+}

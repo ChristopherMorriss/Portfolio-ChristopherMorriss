@@ -1,5 +1,5 @@
 /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/utilities/_extends.scss */
-.alt-menu, #bottom, #sticky-1, #sticky-2, #sticky-3, form {
+.alt-menu, #bottom, #sticky-1, #sticky-2, #sticky-3 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -182,23 +182,14 @@ header, body, #sticky-menu {
   }
 }
 
-@media (min-width: 993px) {
-  /* line 38, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
-  br .long {
-    display: none;
-  }
-}
-
-@media (min-width: 1200px) {
-  /* line 38, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
-  br .long {
-    display: none;
-  }
-}
-
 /* line 48, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
 html {
   scroll-behavior: smooth;
+}
+
+/* line 52, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+small {
+  color: red;
 }
 
 /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
@@ -552,7 +543,21 @@ form .form-object {
   margin-bottom: 10px;
 }
 
-/* line 18, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+/* line 16, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+form .name-label {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* line 26, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+form #f-label, form #l-label {
+  width: 52%;
+}
+
+/* line 33, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
 .name {
   display: flex;
   flex-direction: row;
@@ -561,18 +566,18 @@ form .form-object {
   justify-content: space-between;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+/* line 42, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
 .name #f-name, .name #l-name {
   width: 48%;
 }
 
-/* line 32, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+/* line 47, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
 .contact-info {
   margin-top: 25px;
 }
 
 @media (min-width: 1200px) {
-  /* line 32, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+  /* line 47, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
   .contact-info {
     display: flex;
     flex-direction: row;
@@ -583,7 +588,7 @@ form .form-object {
 }
 
 @media (min-width: 993px) {
-  /* line 32, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+  /* line 47, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
   .contact-info {
     display: flex;
     flex-direction: row;
@@ -594,7 +599,7 @@ form .form-object {
 }
 
 @media (min-width: 1200px) {
-  /* line 57, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+  /* line 72, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
   .contact-msg {
     width: 33vw;
   }

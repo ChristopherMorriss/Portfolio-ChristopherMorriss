@@ -34,17 +34,21 @@ main{ //Used to prevent the first 15% of the content of the page from displaying
     }
 }
 
-br{ 
-    .long{ //Used to put 'Netmatters' and 'Homepage' on the same line when there is enough space
-        @include media(large){
-            display:none;
-        }
-        @include media(x-large){
-            display:none;
-        }
-    }
-}
+// br{ 
+//     .long{ //Used to put 'Netmatters' and 'Homepage' on the same line when there is enough space
+//         @include media(large){
+//             display:none;
+//         }
+//         @include media(x-large){
+//             display:none;
+//         }
+//     }
+// }
 
 html{ 
     scroll-behavior: smooth;
+}
+
+small{
+    color: red; //All <small> are warning notes, so they are red 
 }

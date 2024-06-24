@@ -41,11 +41,11 @@ let slideOutMenu = document.querySelector('.alt-menu');
 slideOutMenu.addEventListener('click',()=>{
   if (hideOrShow===0){ //If hideOrShow variable =0 (is off) when clicked, display the menu 
     hideOrShow +=1; //The hideOrShow variable is now on
-    $('#sticky-3').css('display','inline-flex')
+    $('#sticky-3').css('display','inline-flex');
   }
   else if (hideOrShow===1){ //If hideOrShow variable =1 (is on) when clicked, hide the menu
     hideOrShow -=1; //The hideOrShow variable is now off
-    $('#sticky-3').css('display','none')
+    $('#sticky-3').css('display','none');
   }
 });
 
@@ -62,11 +62,11 @@ function validateForm(){
 
   if (fnombre==='' || lnombre===''){ //If at least one of the boxes is empty, the prompt will be given
     //$('#required-name').css('display','block');
-    alert('Please enter your full name');
+    alert('Please enter your full name: this is required');
   }
   
   if (email1=== ''){
-    $('#required-email').css('display','block');
+    //$('#required-email').css('display','block');
     alert('Please enter your email address: this is required.');
     
   }
@@ -81,7 +81,3 @@ function validateForm(){
 }
 
 
-input.value='Please enter your first name';
-item.textContent=input.value;
-origin.append(item);
-console.log(item);

@@ -492,9 +492,9 @@ img {
 /* line 191, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
 .menu-parts #sticky-3 {
   top: 0px;
-  margin-left: 10vw;
-  width: 82vw;
-  max-width: 82vw;
+  margin-left: 20vw;
+  width: 80vw;
+  max-width: 80vw;
   position: fixed;
   height: 8vh;
   background-color: white;
@@ -511,7 +511,7 @@ img {
 @media (min-width: 576px) {
   /* line 191, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   .menu-parts #sticky-3 {
-    margin-left: 5vw;
+    margin-left: 10vw;
     width: 90vw;
     max-width: 90vw;
     height: 10vh;
@@ -520,6 +520,7 @@ img {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
+    display: none;
   }
 }
 

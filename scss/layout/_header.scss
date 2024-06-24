@@ -190,9 +190,9 @@
     }
     #sticky-3{
         top:0px;
-        margin-left:10vw;
-        width:82vw;
-        max-width:82vw;
+        margin-left:20vw;
+        width:80vw;
+        max-width:80vw;
         position:fixed;
         height:8vh; //Sets the menu to take up the full width of the page at the smaller breakpoints
         background-color: white;
@@ -206,7 +206,7 @@
                 $flex-justify:space-around,
                 );
         @include media(small){
-                margin-left:5vw;
+                margin-left:10vw;
                 width:90vw;
                 max-width:90vw;
                 height:10vh; 
@@ -217,6 +217,7 @@
                     $flex-align:center,
                     $flex-justify:space-around,
                     );
+                    display:none;
                 };
         @extend %center;
         display:none;

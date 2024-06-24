@@ -80,5 +80,5 @@ function validateForm(){
   }
 }
 
-//Need to test website with no JavaScript
+
 //Create sub-domain and link to portfolio

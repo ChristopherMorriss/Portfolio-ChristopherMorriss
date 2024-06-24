@@ -135,31 +135,6 @@
     height: 100%;
 }
 
-// #sticky-3{
-//     top:0px;
-//     position:fixed;
-//     width:90vw;
-//     height:8vh; //Sets the menu to take up the full width of the page at the smaller breakpoints
-//     background-color: white;
-//     border-bottom:4px solid $aqua_blue;
-//     font-size: 13px;
-//     @include flex(
-//             $flex-display:flex,
-//             $flex-direction:column,
-//             $flex-wrap:nowrap,
-//             $flex-align:center,
-//             $flex-justify:space-around,
-//             );
-//     @extend %center;
-//     display:none;
-//     // margin-top: 8px;
-//     // font-size:19px;
-//     // width:100%;
-//     // background-color: red;
-//     // border: 1px solid;
-
-// }
-
 .menu-parts{
     .alt-menu{
         border: 1px solid white;
@@ -197,7 +172,7 @@
         height:8vh; //Sets the menu to take up the full width of the page at the smaller breakpoints
         background-color: white;
         border-bottom:4px solid $aqua_blue;
-        font-size: 13px;
+        font-size: 16px;
         @include flex(
                 $flex-display:flex,
                 $flex-direction:column,
@@ -210,6 +185,7 @@
                 width:90vw;
                 max-width:90vw;
                 height:10vh; 
+                font-size:19px;
                 @include flex(
                     $flex-display:flex,
                     $flex-direction:row,

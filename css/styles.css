@@ -452,7 +452,7 @@ img {
   }
 }
 
-/* line 164, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+/* line 139, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
 .menu-parts .alt-menu {
   border: 1px solid white;
   background-color: black;
@@ -467,7 +467,7 @@ img {
 }
 
 @media (min-width: 576px) {
-  /* line 164, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  /* line 139, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   .menu-parts .alt-menu {
     width: 10vw;
     height: 10vh;
@@ -476,20 +476,20 @@ img {
 }
 
 @media (min-width: 993px) {
-  /* line 164, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  /* line 139, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   .menu-parts .alt-menu {
     display: none;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 164, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  /* line 139, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   .menu-parts .alt-menu {
     display: none;
   }
 }
 
-/* line 191, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+/* line 166, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
 .menu-parts #sticky-3 {
   top: 0px;
   margin-left: 20vw;
@@ -499,7 +499,7 @@ img {
   height: 8vh;
   background-color: white;
   border-bottom: 4px solid #00FFFF;
-  font-size: 13px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -509,12 +509,13 @@ img {
 }
 
 @media (min-width: 576px) {
-  /* line 191, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  /* line 166, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   .menu-parts #sticky-3 {
     margin-left: 10vw;
     width: 90vw;
     max-width: 90vw;
     height: 10vh;
+    font-size: 19px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

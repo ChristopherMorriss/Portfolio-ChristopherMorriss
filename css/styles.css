@@ -12,17 +12,20 @@
 }
 
 @font-face {
+  font-family: 'open sans';
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "iconmoon";
   src: url("../fonts/iconmoon.eot?tl9t0p");
   src: url("../fonts/iconmoon.eot?tl9t0p#iefix") format("embedded-opentype"), url("../fonts/iconmoon.ttf?tl9t0p") format("truetype"), url("../fonts/iconmoon.woff?tl9t0p") format("woff"), url("../fonts/iconmoon.svg?tl9t0p#iconmoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
-  font-family: 'open sans';
-  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
 }
 
-/* line 16, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 19, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "iconmoon" !important;
@@ -36,98 +39,99 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 31, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* Available icons for use in website */
+/* line 35, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-star:before {
   content: "\e903";
   font-size: 2em;
 }
 
-/* line 37, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 41, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-paper-plane:before {
   content: "\e901";
 }
 
-/* line 42, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 46, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-send:before {
   content: "\e901";
 }
 
-/* line 47, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 51, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-cogs:before {
   content: "\e900";
 }
 
-/* line 52, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 56, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-bar-graph:before {
   content: "\e904";
 }
 
-/* line 57, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 61, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-mouse:before {
   content: "\e902";
 }
 
-/* line 62, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 66, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-phone_in_talk:before {
   content: "\e905";
 }
 
-/* line 67, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 71, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-security:before {
   content: "\e906";
 }
 
-/* line 72, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 76, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-school:before {
   content: "\e907";
 }
 
-/* line 77, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 81, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-display:before {
   content: "\e956";
 }
 
-/* line 82, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 86, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-bubble:before {
   content: "\e96b";
 }
 
-/* line 87, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 91, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-search:before {
   content: "\e986";
 }
 
-/* line 92, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 96, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-menu:before {
   content: "\e9bd";
 }
 
-/* line 97, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 101, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-embed2:before {
   content: "\ea80";
 }
 
-/* line 102, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 106, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-facebook:before {
   content: "\ea90";
 }
 
-/* line 107, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 111, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-instagram:before {
   content: "\ea92";
 }
 
-/* line 112, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 116, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-twitter:before {
   content: "\ea96";
 }
 
-/* line 117, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 121, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .icon-linkedin2:before {
   content: "\eaca";
 }
 
-/* line 125, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
+/* line 129, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_typography.scss */
 .open-sans-font {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -187,7 +191,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* line 52, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
+/* line 53, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_base.scss */
 small {
   color: red;
 }
@@ -229,7 +233,7 @@ small {
 @media (min-width: 993px) {
   /* line 32, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
   .icons {
-    height: 100vw;
+    height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -238,7 +242,7 @@ small {
 @media (min-width: 1200px) {
   /* line 32, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/base/_background.scss */
   .icons {
-    height: 100vw;
+    height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -286,17 +290,6 @@ img {
   text-decoration: none;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-  /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    row-gap: 20px;
-    column-gap: 20px;
-  }
-}
-
 @media (min-width: 993px) {
   /* line 1, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
   .grid {
@@ -319,35 +312,35 @@ img {
   }
 }
 
-/* line 42, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
+/* line 34, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
 .grid-object {
   width: 90vw;
   border: 1px solid;
 }
 
 @media (min-width: 993px) {
-  /* line 42, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
+  /* line 34, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
   .grid-object {
     width: 35vw;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 42, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
+  /* line 34, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
   .grid-object {
     width: 25vw;
     position: relative;
     top: 10px;
     transition: .45s ease;
   }
-  /* line 55, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
+  /* line 47, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
   .grid-object:hover {
     top: 0px;
     transition: .45s ease;
   }
 }
 
-/* line 64, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
+/* line 56, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_grid.scss */
 #code-examples {
   margin-top: 20px;
 }
@@ -406,12 +399,12 @@ img {
   }
 }
 
-/* line 60, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+/* line 47, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
 #sticky-1 {
   width: 50%;
 }
 
-/* line 72, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+/* line 52, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
 #sticky-2 {
   border-left: 4px solid #00FFFF;
   border-right: 4px solid #00FFFF;
@@ -424,7 +417,7 @@ img {
 }
 
 @media (min-width: 576px) {
-  /* line 72, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  /* line 52, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   #sticky-2 {
     display: flex;
     flex-direction: row;
@@ -435,7 +428,7 @@ img {
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  /* line 72, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  /* line 52, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   #sticky-2 {
     display: flex;
     flex-direction: row;
@@ -446,7 +439,7 @@ img {
 }
 
 @media (min-width: 993px) {
-  /* line 72, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  /* line 52, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   #sticky-2 {
     border-left: none;
     border-right: none;
@@ -464,7 +457,7 @@ img {
 }
 
 @media (min-width: 1200px) {
-  /* line 72, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  /* line 52, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   #sticky-2 {
     border-left: none;
     border-right: none;
@@ -481,7 +474,7 @@ img {
   }
 }
 
-/* line 139, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+/* line 120, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
 .menu-parts .alt-menu {
   border: 1px solid white;
   background-color: black;
@@ -496,7 +489,7 @@ img {
 }
 
 @media (min-width: 576px) {
-  /* line 139, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  /* line 120, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   .menu-parts .alt-menu {
     width: 10vw;
     height: 10vh;
@@ -505,20 +498,20 @@ img {
 }
 
 @media (min-width: 993px) {
-  /* line 139, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  /* line 120, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   .menu-parts .alt-menu {
     display: none;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 139, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  /* line 120, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   .menu-parts .alt-menu {
     display: none;
   }
 }
 
-/* line 166, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+/* line 148, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
 .menu-parts #sticky-3 {
   top: 0px;
   margin-left: 20vw;
@@ -538,7 +531,7 @@ img {
 }
 
 @media (min-width: 576px) {
-  /* line 166, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
+  /* line 148, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/layout/_header.scss */
   .menu-parts #sticky-3 {
     margin-left: 10vw;
     width: 90vw;
@@ -586,12 +579,12 @@ form {
   }
 }
 
-/* line 13, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+/* line 12, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
 form .form-object {
   margin-bottom: 10px;
 }
 
-/* line 16, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+/* line 15, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
 form .name-label {
   display: flex;
   flex-direction: row;
@@ -600,12 +593,12 @@ form .name-label {
   justify-content: flex-start;
 }
 
-/* line 26, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+/* line 25, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
 form #f-label, form #l-label {
   width: 52%;
 }
 
-/* line 33, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+/* line 32, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
 .name {
   display: flex;
   flex-direction: row;
@@ -614,18 +607,18 @@ form #f-label, form #l-label {
   justify-content: space-between;
 }
 
-/* line 42, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+/* line 40, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
 .name #f-name, .name #l-name {
   width: 48%;
 }
 
-/* line 47, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+/* line 45, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
 .contact-info {
   margin-top: 25px;
 }
 
 @media (min-width: 1200px) {
-  /* line 47, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+  /* line 45, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
   .contact-info {
     display: flex;
     flex-direction: row;
@@ -636,7 +629,7 @@ form #f-label, form #l-label {
 }
 
 @media (min-width: 993px) {
-  /* line 47, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+  /* line 45, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
   .contact-info {
     display: flex;
     flex-direction: row;
@@ -647,15 +640,10 @@ form #f-label, form #l-label {
 }
 
 @media (min-width: 1200px) {
-  /* line 72, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
+  /* line 70, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
   .contact-msg {
     width: 33vw;
   }
-}
-
-/* line 85, ../../../OneDrive/Documents/GitHub/Portfolio-ChristopherMorriss/scss/modules/_form.scss */
-#required-email {
-  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

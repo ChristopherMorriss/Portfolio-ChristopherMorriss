@@ -1,3 +1,8 @@
+@font-face{
+    font-family: 'open sans';
+    src:url('../fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
 @font-face {
     font-family: '#{$icomoon-font-family}';
     src:  url('../#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tl9t0p');
@@ -9,8 +14,6 @@
     font-style: normal;
     font-display: block;
 
-    font-family: 'open sans';
-    src:url('../fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
   }
   
   [class^="icon-"], [class*=" icon-"] {
@@ -131,3 +134,6 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+
+

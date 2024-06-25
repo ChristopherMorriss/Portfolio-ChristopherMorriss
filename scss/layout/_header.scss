@@ -1,17 +1,4 @@
 .sticky-menu{
-    //top:0px;
-    //position:fixed;
-    //width:100vw; //Sets the menu to take up the full width of the page at the smaller breakpoints
-    //background-color: white;
-    //border-bottom:4px solid $aqua_blue;
-    //@extend %center;
-    // @include flex(
-    //         $flex-display:flex,
-    //         $flex-direction:row,
-    //         $flex-wrap:nowrap,
-    //         $flex-align:center,
-    //         $flex-justify:space-between
-    //         );
     display:none;
     @include media(small){
         display:none;
@@ -59,14 +46,7 @@
 
 #sticky-1{
     @extend %center;
-    //border-right:4px solid $aqua_blue;
-    //width:40%;
     width:50%;
-    // @include media(x-large){
-    //     //border-right:none;
-    //     //border-bottom: 4px solid $aqua_blue;
-    //     width:100%;
-    // }
 }
 
 #sticky-2{
@@ -163,12 +143,12 @@
             display:none;
         };
     }
-    #sticky-3{
-        top:0px;
-        margin-left:20vw;
+    #sticky-3{ //The pop-up menu
+        top:0px; //Forces the menu to the top of the page
+        margin-left:20vw; //Prevents the start of the menu from being hidden by the menu button
         width:80vw;
         max-width:80vw;
-        position:fixed;
+        position:fixed; //Forces it to stay in the same place regardless of scrolling
         height:8vh; //Sets the menu to take up the full width of the page at the smaller breakpoints
         background-color: white;
         border-bottom:4px solid $aqua_blue;
@@ -182,10 +162,10 @@
                 );
         @include media(small){
                 margin-left:10vw;
-                width:90vw;
+                width:90vw; 
                 max-width:90vw;
                 height:10vh; 
-                font-size:19px;
+                font-size:19px; //Bigger font size to allow easier reading and clicking of the menu buttons
                 @include flex(
                     $flex-display:flex,
                     $flex-direction:row,

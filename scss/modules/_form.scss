@@ -1,5 +1,4 @@
 form{
-    //@extend %center;
     @extend %margin-percent;
     @include grid($g-display:grid,
                   $g-row:1fr,
@@ -31,7 +30,6 @@ form{
 }
 
 .name{
-    //@extend %center;
     @include flex(
             $flex-display:flex,
             $flex-direction:row,
@@ -82,6 +80,8 @@ form{
 //  display:none;
 //}
 
-#required-email{ //This message does not have an impact on the layout, so it is not commented out
-    display:none;
-};
+// #required-email{ //This message does not have an impact on the layout 
+//                  //However, it wouldn't make much sense to have only the email warning display, so I have commented it out
+
+//     display:none;
+// };

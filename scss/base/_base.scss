@@ -1,10 +1,10 @@
 *{
-    box-sizing: border-box;
-    font-family: 'open sans', sans-serif;
+    box-sizing: border-box; //Prevents some layout issues
+    font-family: 'open sans', sans-serif; //Backup font family for if the custom fonts fail to load
 }
 
-a{
-    text-decoration: none;
+a{ //Removes the default underline and only adds it back if the <a> is hovered over
+    text-decoration: none; 
     color:$pure_black;
     &:hover{
         text-decoration: underline;
@@ -13,7 +13,7 @@ a{
 
 button{
     &:hover{
-        cursor: pointer;
+        cursor: pointer; //Changes the cursor so that the button is treated the same way a link is when hovered over
     }
     max-width:100px;
 }
@@ -25,7 +25,7 @@ header, body, #sticky-menu{
     background-color:$bg-colour;
 }
 
-main{ //Used to prevent the first 15% of the content of the page from displaying underneath the fixed menu
+main{ //Used to prevent the first 15% of the content of the page from displaying underneath the fixed menu on the larger screens
     @include media(large){
         margin-left: 15%;
     }
@@ -47,6 +47,7 @@ main{ //Used to prevent the first 15% of the content of the page from displaying
 
 html{ 
     scroll-behavior: smooth;
+     //Changes the scrolling from <a> links move quickly to area specified from the <a> instead of jumping straight to it
 }
 
 small{

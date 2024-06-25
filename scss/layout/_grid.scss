@@ -6,14 +6,14 @@
     text-decoration: none; //Removes underline from hyperlinks
    }
 
-    @include grid($g-display:grid,
+    @include grid($g-display:grid, //For the smaller screens, displays each grid item on a sepearate line (1x6 grid)
                   $g-row:1fr,
                   $g-column:1fr,
                   $gutter-row:20px,
                   $gutter-column:20px);
 
     @include media(medium){
-        @include grid($g-display:grid,
+        @include grid($g-display:grid, 
                       $g-row:1fr,
                       $g-column:1fr,
                       $gutter-row:20px,
@@ -40,7 +40,7 @@
     
 
     &-object{
-        width: 90vw;
+        width: 90vw; //The grid items fill 90% of the width on small devices
         border: 1px solid;
 
         @include media(large){
@@ -52,7 +52,7 @@
             position:relative;
             top: 10px;
             transition: .45s ease;
-            &:hover{
+            &:hover{ //Raises a grid item by 10 pixels when it is hovered over
                 top:0px;
                 transition: .45s ease;
             }

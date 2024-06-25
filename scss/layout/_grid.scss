@@ -11,14 +11,6 @@
                   $g-column:1fr,
                   $gutter-row:20px,
                   $gutter-column:20px);
-
-    @include media(medium){
-        @include grid($g-display:grid, 
-                      $g-row:1fr,
-                      $g-column:1fr,
-                      $gutter-row:20px,
-                      $gutter-column:20px);
-                }
     
     @include media(large){
         @include grid($g-display:grid,

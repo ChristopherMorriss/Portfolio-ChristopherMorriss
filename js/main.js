@@ -22,9 +22,9 @@ $('.nav-page').css('display','none');
 $('.nav-page').text(''); 
 $('.nav-page').css('display','block'); 
 //console.log(txt2);
-function typeWriternav() { //Does the same as the previous function but on the navigation page name
+function typeWriternav() { //Does the same as the previous function but affects the navigation page name instead
   if (j < txt2.length) {
-   document.querySelector(".nav-page").innerHTML += txt2.charAt(j); //Adds a letter at a time to the specified class
+   document.querySelector(".nav-page").innerHTML += txt2.charAt(j); 
    
 
    j++;
@@ -51,7 +51,7 @@ slideOutMenu.addEventListener('click',()=>{
 
 function validateForm(){
   let regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
-  //lAbove regex is used to try and validate all possible email addresses
+  //Above regex is used to try and validate all possible email addresses
   //let regex2 = new RegExp^(?:\+44|0)(?:\d{9}|\d{10}|\d{11}|\d{12})$; //Phone regex
   let fnombre =$('#f-name').val();
   let lnombre= $('#l-name').val();
@@ -82,4 +82,4 @@ function validateForm(){
 }
 
 
-//Create sub-domain and link to portfolio
+

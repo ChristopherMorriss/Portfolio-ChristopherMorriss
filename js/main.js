@@ -62,21 +62,31 @@ function validateForm(){
                                  //If it does, test1 will be assigned to true. If not, it will be assigned to false
 
   if (fnombre==='' || lnombre===''){ //If at least one of the name boxes is empty, the prompt will be given
-    //$('#required-name').css('display','block'); //Code for the red text warning message, currently disabled
-    alert('Please enter your full name: this is required');
+    $('#required-name').css('display','block'); //Code for the red text warning message, currently disabled
+    if (fnombre == ''){
+      $('#f-name').addClass('error');
+    }
+    else{
+      $('#f-name').removeClass('error');
+    }
+    if (lnombre == ''){
+      $('#l-name').addClass('error');
+    }
+    else{
+      $('#l-name').removeClass('error');
+    }
   }
   
   if (email1=== ''){
-    //$('#required-email').css('display','block'); //Code for the red text warning message, currently disabled
-    alert('Please enter your email address: this is required.');
-    
+    $('#required-email').css('display','block'); //Code for the red text warning message, currently disabled
+    $('#email').addClass('error');
   }
   else{
     if (test1 === true){
-      alert('Email address validated.');
+
     }
     else {
-      alert('Invalid email.');
+      $('#email').addClass('error');
     }
   }
 }

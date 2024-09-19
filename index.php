@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php $title="I'm a web developer" ?>
 <html>
     <head>  
         <meta charset="utf-8">
@@ -13,53 +14,25 @@
     </head>
 
     <body>
-        <header id="top">
-            <!-- Code for the fixed menu. It doesn't display on viewports smaller than large -->
-            <div class="sticky-menu">
-                <h1 id="sticky-1">
-                    <a href="index.html" id="initials">CM</a>
-                </h1>
-                <nav id="sticky-2">
-                    <a href="about-me.html">About Me</a>
-                    <a href="#code-examples">My Portfolio</a>
-                    <a href="coding-examples.html">Coding Examples</a>
-                    <a href="scs-scheme.html">SCS Scheme</a>
-                </nav>
-            
-                <div id="contact">
-                    <a href="#contact-link">Contact Me</a>
-                </div>
-    
-                <div class="icons"> 
-                    <a href="https://github.com/ChristopherMorriss">Github</a>
-                    <!-- <span class="icon-facebook"></span>
-                    <span class="icon-instagram"></span>
-                    <span class="icon-twitter"></span>
-                    <span class="icon-linkedin2"></span> -->
-                </div>
-
-
-            </div>
-    
-        </header>
+        <?php include "php/sticky-menu.php" ?>
         <main> 
-        
+            <?php include "php/banner.php" ?>    
         <!-- Code for the banner. The banner contains the code for the navigation for the smaller viewports  -->    
-        <div class="banner intro">
+        <!-- <div class="banner intro">
             <div class="menu-parts">
                 <span class="icon-menu alt-menu">
                     <nav id="sticky-3">
-                        <a href="about-me.html">About Me</a>
+                        <a href="about-me.php">About Me</a>
                         <a href="#code-examples">My Portfolio</a>
-                        <a href="coding-examples.html">Coding Examples</a>
-                        <a href="scs-scheme.html">SCS Scheme</a>
+                        <a href="coding-examples.php">Coding Examples</a>
+                        <a href="scs-scheme.php">SCS Scheme</a>
                     </nav>
                 </span>
             </div>
             <h1 class="chris-name">Christopher Morriss</h1>
             <h2 class="nav-page">I'm a web developer</h2>
             <h2><a href="#bottom">Scroll Down &ShortDownArrow;</a></h2>
-        </div>
+        </div> -->
 
         <!-- Grid of Projects -->
         <div class="grid" id="code-examples">
@@ -84,21 +57,21 @@
                     <h2>View Project &ShortRightArrow;</h2>
                 </div>
             </a>
-            <a href="coming-soon.html">
+            <a href="coming-soon.php">
                 <div class="grid-object">
                     <img src="img/placeholder-code.png" alt="placeholder image">
                     <h1>Coming Soon</h1>
                     <h2>View Project &ShortRightArrow;</h2>
                 </div>
             </a>
-            <a href="coming-soon.html">
+            <a href="coming-soon.php">
                 <div class="grid-object">
                     <img src="img/placeholder-code.png" alt="placeholder image">
                     <h1>Coming Soon</h1>
                     <h2>View Project &ShortRightArrow;</h2>
                 </div>
             </a>
-            <a href="coming-soon.html">
+            <a href="coming-soon.php">
                 <div class="grid-object">
                     <img src="img/placeholder-code.png" alt="placeholder image">
                     <h1>Coming Soon</h1>
@@ -116,7 +89,7 @@
                 <h3>Me@MyEmail.com</h3>
                 <p>Contact me during the hours 9:00am-11:30am or 1:00pm-4:00pm for the quickest response</p>
             </div>
-            <form>
+            <form method="post" action="index.php" onclick="return false">
                 <div class="name-label">
                     <label for="f-name" id="f-label">First Name:</label>
                     <label for="l-name">Last Name:</label>
@@ -126,13 +99,15 @@
                     <input type="text" id="l-name" class="form-object" placeholder="Last Name*">
                 </div>
                 <!-- The class below was intented to add error messages but it ruins the layout so I have removed it for now -->
-                <!-- <div class="name-warning">
-                     This is small to prevent the size from breaking the layout of the page 
+                <div class="name-warning error-box">
+                    <!-- This is small to prevent the size from breaking the layout of the page  -->
                     <small id="required-name">Please enter your full name</small>
-                </div> -->
+                </div>
                 <label>Email:</label> 
                 <input type="text" id="email" class="form-object" placeholder="Email Address*">
-                <!-- <small id="required-email">Please enter a valid email</small> -->
+                <div class="error-box">
+                    <small id="required-email">Please enter a valid email</small>
+                </div>
                 <label>Subject:</label>
                 <input type="text" id="subject" class="form-object" placeholder="Subject">
                 <label>Message:</label> 

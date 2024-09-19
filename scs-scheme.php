@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<?php $title="SCS Scheme" ?>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+      <title><?php echo $title ?></title>
+   </head>
+   <body>
+      <?php include "php/sticky-menu.php" ?>
+      <main>
+         <?php include "php/banner.php" ?>
+         <div class="space">
+            <h1>Introduction to Scion Coalition Scheme</h1>
+            <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates
+               the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to 
+               complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive 
+               in a short space of time.</p>
+
+            <h1>Treehouse</h1>
+            <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming,
+               iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress
+               and see how much they've covered in certain areas.</p>
+            <h2><a href="https://teamtreehouse.com/profiles/christophermorriss2">Total Score:5988</a></h2>
+            <h1>About Netmatters</h1>
+            <p>Established in 2008<br>
+            Norfolk's leading technology company<br>
+            Winner of the Princess Royal Training Award<br>
+            Winner of EDP Skills of Tomorrow Award<br>
+            80+ staff, 2 locations across Norfolk<br>
+            Digital Marketing, Website & Software development & IT Support<br>
+            Broad spectrum of clients, working nationwide<br>
+            Operate to strict company values</p>
+         </div>
+      </main>
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/main.js"></script>
+   </body>
+</html>

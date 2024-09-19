@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php $title="Coding Examples" ?>
 <html>
    <head>
       <meta charset="utf-8">
@@ -8,52 +9,12 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-      <title>Coding Examples</title>
+      <title>$title</title>
    </head>
    <body>
-      <header>
-         <div class="sticky-menu">
-             <h1 id="sticky-1">
-                <a href="index.html">CM</a>
-             </h1>
-             <nav id="sticky-2">
-                 <a href="about-me.html">About Me</a>
-                 <a href="index.html#code-examples">My Portfolio</a>
-                 <a href="coding-examples.html">Coding Examples</a>
-                 <a href="scs-scheme.html">SCS Scheme</a>
-             </nav>
-         
-             <div id="contact">
-                <a href="index.html#contact-link">Contact Me</a>
-             </div>
- 
-             
-            <div class="icons">
-               <a href="https://github.com/ChristopherMorriss">Github</a>
-               <!-- <span class="icon-facebook"></span>
-               <span class="icon-instagram"></span>
-               <span class="icon-twitter"></span>
-               <span class="icon-linkedin2"></span> -->
-            </div>
-         </div>
-         
-      </header>
+      <?php include "php/sticky-menu.php" ?>
       <main>
-        <div class="banner intro">
-            <div class="menu-parts">
-               <span class="icon-menu alt-menu">
-                  <nav id="sticky-3">
-                     <a href="about-me.html">About Me</a>
-                     <a href="#code-examples">My Portfolio</a>
-                     <a href="coding-examples.html">Coding Examples</a>
-                     <a href="scs-scheme.html">SCS Scheme</a>
-                  </nav>
-               </span>
-            </div>
-            <h1 class="chris-name">Christopher Morriss</h1>
-            <h2 class="nav-page">Coding Examples</h2>
-            <h2><a href="#bottom">Scroll Down &ShortDownArrow;</a></h2>
-        </div>
+         <?php include "php/banner.php" ?>
         <!-- Main Content Of Page -->
         <div id="code-examples">
          <img src="img/html-snippet.png" alt="snippet of html code">

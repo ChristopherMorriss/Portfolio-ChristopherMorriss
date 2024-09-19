@@ -50,6 +50,7 @@ slideOutMenu.addEventListener('click',()=>{
 });
 
 function validateForm(){
+  let validate = 1; //Unless an error occurs, this will stay at 1 and will allow the success validation message to appear
   let regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
   //Above regex is used to try and validate all possible email addresses
   //let regex2 = new RegExp^(?:\+44|0)(?:\d{9}|\d{10}|\d{11}|\d{12})$; //Phone regex
@@ -62,7 +63,8 @@ function validateForm(){
                                  //If it does, test1 will be assigned to true. If not, it will be assigned to false
 
   if (fnombre==='' || lnombre===''){ //If at least one of the name boxes is empty, the prompt will be given
-    $('#required-name').css('display','block'); //Code for the red text warning message, currently disabled
+    validate = 0;
+    $('.name-warning').css('display','block'); 
     if (fnombre == ''){
       $('#f-name').addClass('error');
     }
@@ -76,18 +78,38 @@ function validateForm(){
       $('#l-name').removeClass('error');
     }
   }
+  else{
+    $('.name-warning').css('display','none');
+    $('#f-name').removeClass('error');
+    $('#l-name').removeClass('error');
+  }
   
   if (email1=== ''){
-    $('#required-email').css('display','block'); //Code for the red text warning message, currently disabled
+    $('.email-warning').css('display','block'); //Code for the red text warning message, currently disabled
     $('#email').addClass('error');
+    validate = 0;
   }
   else{
     if (test1 === true){
-
+      $('.email-warning').css('display','none');
+      $('#email').removeClass('error');
     }
     else {
       $('#email').addClass('error');
+      validate = 0;
     }
+  }
+  if (textarea1=== ''){
+    $('#message-textarea').addClass('error');
+    validate = 0;
+  }
+  else{
+    $('.email-warning').css('display','none');
+    $('#message-textarea').removeClass('error');
+  }
+  console.log(validate);
+  if (validate === 1){
+    $('.success-sent').css('display','block');
   }
 }
 

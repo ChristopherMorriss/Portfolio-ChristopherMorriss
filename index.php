@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include "function.php" ?>
 <?php $title="I'm a web developer" ?>
 <html>
     <head>  
@@ -89,29 +90,62 @@
                 <h3>Me@MyEmail.com</h3>
                 <p>Contact me during the hours 9:00am-11:30am or 1:00pm-4:00pm for the quickest response</p>
             </div>
-            <form method="post" action="index.php" onclick="return false">
+            <?php
+                if ($_SERVER['REQUEST_METHOD'] == 'POST'){ 
+                    $valid_submission = 1;
+                    $email_regex = "";
+                    //Filters the contents of the input fields with the name 'user-name', 'message' etc to prevent SQL injection 
+                    $first_name = trim(filter_input(INPUT_POST,'first-name',FILTER_SANITIZE_STRING));  
+                    $last_name = trim(filter_input(INPUT_POST,'last-name',FILTER_SANITIZE_STRING));
+                    $email = trim(filter_input(INPUT_POST,'email-address',FILTER_SANITIZE_STRING));
+                    $subject = trim(filter_input(INPUT_POST,'subject',FILTER_SANITIZE_STRING));
+                    $message =trim(filter_input(INPUT_POST,'textarea',FILTER_SANITIZE_STRING));
+                    if (empty($first_name) || empty($last_name) || empty($email) || empty($message)){
+                        //If one of these input fields is empty, the error message is assigned 
+                        //and is ready to be output in the relevant part of the HTML
+                        $error_message = 'Please fill in the required fields: first_name, last_name, email and message';
+                    }
+                    else{ 
+                        echo " fname = $first_name<br>";
+                        echo " lname = $last_name<br>";
+                        echo " email = $email<br>";
+                        echo " message = $message<br>";
+                        
+                        add_enquiry($first_name,$last_name,$email,$subject,$message);
+                    }
+                }
+                ?>
+            <form method="post" action="index.php">
+            <!-- onclick="return false" -->
+                <?php if (isset($error_message)){
+                        echo "<p class='message'>$error_message</p>";
+                    }
+                    ?>
+                <div class="success-box success-sent">
+                    <small id="success-msg">Your message has been successfully sent!</small>
+                </div>
                 <div class="name-label">
-                    <label for="f-name" id="f-label">First Name:</label>
-                    <label for="l-name">Last Name:</label>
+                    <label for="f-name" id="f-label">First Name:<span class="asterix">*</span></label>
+                    <label for="l-name">Last Name:<span class="asterix">*</span></label>
                 </div>
                 <div class="name">
-                    <input type="text" id="f-name" class="form-object" placeholder="First Name*">
-                    <input type="text" id="l-name" class="form-object" placeholder="Last Name*">
+                    <input type="text" id="f-name" class="form-object" placeholder="First Name" name="first-name">
+                    <input type="text" id="l-name" class="form-object" placeholder="Last Name" name="last-name">
                 </div>
                 <!-- The class below was intented to add error messages but it ruins the layout so I have removed it for now -->
                 <div class="name-warning error-box">
                     <!-- This is small to prevent the size from breaking the layout of the page  -->
                     <small id="required-name">Please enter your full name</small>
                 </div>
-                <label>Email:</label> 
-                <input type="text" id="email" class="form-object" placeholder="Email Address*">
-                <div class="error-box">
+                <label>Email:<span class="asterix">*</span></label> 
+                <input type="text" id="email" class="form-object" placeholder="Email Address" name="email-address">
+                <div class="error-box email-warning">
                     <small id="required-email">Please enter a valid email</small>
                 </div>
                 <label>Subject:</label>
-                <input type="text" id="subject" class="form-object" placeholder="Subject">
-                <label>Message:</label> 
-                <textarea id="message-textarea" placeholder="Message" class="form-object"></textarea>
+                <input type="text" id="subject" class="form-object" placeholder="Subject" name="subject">
+                <label>Message:<span class="asterix">*</span></label> 
+                <textarea id="message-textarea" placeholder="Message" class="form-object" name="textarea"></textarea>
                 <button class="btn" class="form-object" id="submit" onclick="validateForm()">Submit</button>
             </form>
         </div>

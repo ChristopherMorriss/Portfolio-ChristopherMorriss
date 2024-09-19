@@ -458,12 +458,21 @@ img {
   border-color: red;
 }
 
-.error-box {
+.error-box, .success-box {
   display: none;
+}
+
+#success-msg {
+  color: green;
 }
 
 .icons {
   color: #00FFFF;
+}
+
+.asterix {
+  margin-left: 5px;
+  color: red;
 }
 
 .btn {

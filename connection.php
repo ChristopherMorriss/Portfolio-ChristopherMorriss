@@ -1,39 +1,39 @@
 <?php
 //Connection for the localhost
 include "phpenv.php";
-try{
-    $db = new PDO("mysql:host=localhost;dbname=portfolio_form;port=3306","root","");
-    $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-    //var_dump($db);
-}
-catch(exception $e){
-    echo "Unable to connect";
-    exit;
-}
-
-// $servername = $_ENV['MySQL_DB_HOST'];
-// echo $servername;
-// $database = $_ENV['MySQL_DB_USER_NAME'];
-// echo $database;
-// $username = $_ENV['MySQL_DB_PASSWORD'];
-// echo $username;
-// $password = $_ENV['MySQL_DB_NAME'];
-// echo $password;
-
- 
-// Create connection
- 
-//$conn = mysqli_connect($servername, $username, $password, $database);
- 
-// Check connection
- 
-// if (!$conn) {
- 
-//     die("Connection failed: " . mysqli_connect_error());
- 
+// try{
+//     $db = new PDO("mysql:host=localhost;dbname=portfolio_form;port=3306","root","");
+//     $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+//     //var_dump($db);
 // }
-// echo "Connected successfully";
-// mysqli_close($conn);
+// catch(exception $e){
+//     echo "Unable to connect";
+//     exit;
+// }
+
+$servername = $_ENV['MySQL_DB_HOST'];
+echo $servername;
+$database = $_ENV['MySQL_DB_USER_NAME'];
+echo $database;
+$username = $_ENV['MySQL_DB_PASSWORD'];
+echo $username;
+$password = $_ENV['MySQL_DB_NAME'];
+echo $password;
+
+ 
+//Create connection
+ 
+$conn = mysqli_connect($servername, $username, $password, $database);
+ 
+//Check connection
+ 
+if (!$conn) {
+ 
+    die("Connection failed: " . mysqli_connect_error());
+ 
+}
+echo "Connected successfully";
+mysqli_close($conn);
 
 
 // try {

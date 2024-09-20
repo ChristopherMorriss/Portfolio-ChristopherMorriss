@@ -17,7 +17,7 @@
         }
     }
 
-    function delete_enquiry(){
+    function delete_enquiry(){ //Used to clear the contents of the database
         include "connection.php";
         $sql ='DELETE FROM enquiries';
         try{
@@ -29,3 +29,4 @@
         }
     }
 ?>
+

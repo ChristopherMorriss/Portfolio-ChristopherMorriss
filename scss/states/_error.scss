@@ -4,8 +4,44 @@
 
 .error-box, .success-box{
     display: none;
+    justify-content: space-between;
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
 }
 
-#success-msg{
-    color: green;
+.error-box{
+    background-color: red;
+    color: white;
+
+} 
+
+.success-box{
+    background-color: green;
+    color: white;
+}
+
+.close{
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.2;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    &:focus,&:hover{
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: .5;
+    }
+}
+
+iframe{ //Stops the page from reloading whenever the submit button is pressed
+    display: none;
 }

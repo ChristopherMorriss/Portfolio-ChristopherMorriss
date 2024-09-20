@@ -155,10 +155,6 @@ html {
   scroll-behavior: smooth;
 }
 
-small {
-  color: red;
-}
-
 .banner {
   background-image: url("../img/background.jpg.crdownload");
   background-repeat: no-repeat;
@@ -460,10 +456,45 @@ img {
 
 .error-box, .success-box {
   display: none;
+  justify-content: space-between;
+  height: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
 }
 
-#success-msg {
-  color: green;
+.error-box {
+  background-color: red;
+  color: white;
+}
+
+.success-box {
+  background-color: green;
+  color: white;
+}
+
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.2;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+.close:focus, .close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+iframe {
+  display: none;
 }
 
 .icons {

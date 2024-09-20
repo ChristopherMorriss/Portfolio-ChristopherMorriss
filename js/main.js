@@ -51,7 +51,7 @@ slideOutMenu.addEventListener('click',()=>{
 
 function validateForm(){
   let validate = 1; //Unless an error occurs, this will stay at 1 and will allow the success validation message to appear
-  let regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
+  let regex = new RegExp(/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/);
   //Above regex is used to try and validate all possible email addresses
   //let regex2 = new RegExp^(?:\+44|0)(?:\d{9}|\d{10}|\d{11}|\d{12})$; //Phone regex
   let fnombre =$('#f-name').val();
@@ -100,11 +100,12 @@ function validateForm(){
     }
   }
   if (textarea1=== ''){
+    $('.message-warning').css('display','block');
     $('#message-textarea').addClass('error');
     validate = 0;
   }
   else{
-    $('.email-warning').css('display','none');
+    $('.message-warning').css('display','none');
     $('#message-textarea').removeClass('error');
   }
   console.log(validate);
@@ -113,5 +114,21 @@ function validateForm(){
   }
 }
 
+function deleteSuccessMessage(){
+  $('.success-sent').css('display','none');
+}
+
+function deleteNameError(){
+  $('.name-warning').css('display','none');
+}
+
+function deleteMessageError(){
+  $('.message-warning').css('display','none');
+}
+
+function deleteEmailError(){
+  $('.email-warning').css('display','none');
+}
 
 
+//Need to set up the emails to include the submission form details

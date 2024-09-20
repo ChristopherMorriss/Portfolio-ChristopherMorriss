@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <title>Portfolio - Christopher Morriss</title>
+        <?php include "phpenv.php" ?>
     </head>
 
     <body>
@@ -106,23 +107,28 @@
                         $error_message = 'Please fill in the required fields: first_name, last_name, email and message';
                     }
                     else{ 
-                        echo " fname = $first_name<br>";
-                        echo " lname = $last_name<br>";
-                        echo " email = $email<br>";
-                        echo " message = $message<br>";
-                        
-                        add_enquiry($first_name,$last_name,$email,$subject,$message);
+                        // echo " fname = $first_name<br>";
+                        // echo " lname = $last_name<br>";
+                        // echo " email = $email<br>";
+                        // echo " message = $message<br>";
+                        $email_regex = "/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/";
+                        $match = preg_match($email_regex,$email);
+                        // echo "<p>match=$match</p>";
+                        if ($match != 0){
+                            add_enquiry($first_name,$last_name,$email,$subject,$message);
+                        }  
                     }
+                    
                 }
                 ?>
-            <form method="post" action="index.php">
+            <form method="post" action="index.php" target="frame">
             <!-- onclick="return false" -->
                 <?php if (isset($error_message)){
                         echo "<p class='message'>$error_message</p>";
                     }
                     ?>
                 <div class="success-box success-sent">
-                    <small id="success-msg">Your message has been successfully sent!</small>
+                    <small id="success-msg">Your message has been successfully sent!<button class="close" onclick="deleteSuccessMessage()">×</button></small>
                 </div>
                 <div class="name-label">
                     <label for="f-name" id="f-label">First Name:<span class="asterix">*</span></label>
@@ -135,17 +141,21 @@
                 <!-- The class below was intented to add error messages but it ruins the layout so I have removed it for now -->
                 <div class="name-warning error-box">
                     <!-- This is small to prevent the size from breaking the layout of the page  -->
-                    <small id="required-name">Please enter your full name</small>
+                    <small id="required-name">Please enter your full name<button class="close" onclick="deleteNameError()">×</button></small>
                 </div>
                 <label>Email:<span class="asterix">*</span></label> 
                 <input type="text" id="email" class="form-object" placeholder="Email Address" name="email-address">
                 <div class="error-box email-warning">
                     <small id="required-email">Please enter a valid email</small>
+                    <button class="close" onclick="deleteEmailError()">×</button>
                 </div>
                 <label>Subject:</label>
                 <input type="text" id="subject" class="form-object" placeholder="Subject" name="subject">
                 <label>Message:<span class="asterix">*</span></label> 
                 <textarea id="message-textarea" placeholder="Message" class="form-object" name="textarea"></textarea>
+                <div class="error-box message-warning">
+                    <small id="required-message">Please enter a message<button class="close" onclick="deleteMessageError()">×</button></small>
+                </div>
                 <button class="btn" class="form-object" id="submit" onclick="validateForm()">Submit</button>
             </form>
         </div>
@@ -157,6 +167,7 @@
     <!-- JavaScript Links -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
+    <iframe name="frame"></iframe>
     </body>
     
 </html>

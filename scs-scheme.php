@@ -26,7 +26,7 @@
             <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming,
                iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress
                and see how much they've covered in certain areas.</p>
-            <h2><a href="https://teamtreehouse.com/profiles/christophermorriss2">Total Score:5988</a></h2>
+            <h2><a href="https://teamtreehouse.com/profiles/christophermorriss2">Total Score:11338</a></h2>
             <h1>About Netmatters</h1>
             <p>Established in 2008<br>
             Norfolk's leading technology company<br>

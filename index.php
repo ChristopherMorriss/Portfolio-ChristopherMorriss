@@ -38,31 +38,31 @@
 
         <!-- Grid of Projects -->
         <div class="grid" id="code-examples">
-            <a href="https://christophermorriss.github.io/Netmatters-Website-Clone-ChristopherMorriss/">
+            <a href="https://netmatters.christopher-morriss.netmatters-scs.co.uk/">
                 <div class="grid-object">
                     <img src="img/placeholder-code.png" alt="placeholder image">
                     <h1>Netmatters Home</h1>
                     <h2>View Project &ShortRightArrow;</h2>
                 </div>
             </a>
-            <a href="https://christophermorriss.github.io/Portfolio-ChristopherMorriss/">
+            <a href="christopher-morriss.netmatters-scs.co.uk/">
                 <div class="grid-object">
-                    <img src="img/porftolio-homepage.png" alt="portfolio homepage image">
+                    <img src="img/porftolio-homepage.png" alt="Portfolio Homepage Image">
                     <h1>My Portfolio</h1>
                     <h2>View Project &ShortRightArrow;</h2>
                 </div>
             </a>
-            <a href="https://christophermorriss.github.io/JS-Array/">
+            <a href="https://js-array.christopher-morriss.netmatters-scs.co.uk/">
                 <div class="grid-object">
-                    <img src="img/javascript-array-project.png" alt="placeholder image">
+                    <img src="img/javascript-array-project.png" alt="Javascript Array Project Image">
                     <h1>Coming Soon</h1>
                     <h2>View Project &ShortRightArrow;</h2>
                 </div>
             </a>
-            <a href="coming-soon.php">
+            <a href="https://laravel.christopher-morriss.netmatters-scs.co.uk/">
                 <div class="grid-object">
-                    <img src="img/placeholder-code.png" alt="placeholder image">
-                    <h1>Coming Soon</h1>
+                    <img src="img/admin_panel_laravel_assessment.png" alt="Admin Panel Project Image">
+                    <h1>Admin Panel</h1>
                     <h2>View Project &ShortRightArrow;</h2>
                 </div>
             </a>

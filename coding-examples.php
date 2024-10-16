@@ -33,6 +33,26 @@
          <p>This piece of code is used to delete all collections from my JS Array Project. It is functionally the same as refreshing the page</p>
          <p>I used JavaScript because I needed a way to modify the objects created dynamically during the running of the code.</p>
          <p>JavaScript allows me to use arrays to store values, which I can use for comparisons.</p>
+
+         <img src="img/php_snippet.png" alt="snippet of php code">
+         <h1>PHP</h1>
+         <p>This piece of code is used to try and create a connection between the database and php file</p>
+         <p>It takes the variables stored in the .env file and uses as credentials to try and access the database </p>
+         <p>
+            If the credentials are wrong, an error will occur, denying the user access to the database. If the credentials are 
+            correct, the message "Connection Successful" will appear and the user will be allowed to modify the contents of the 
+            database they have just connected to
+         </p>
+
+         <img src="img/laravel_snippet.png" alt="snippet of php code">
+         <h1>Laravel</h1>
+         <p>This piece of code is used to try and create a connection between the database and php file</p>
+         <p>It takes the variables stored in the .env file and uses as credentials to try and access the database </p>
+         <p>
+            If the credentials are wrong, an error will occur, denying the user access to the database. If the credentials are 
+            correct, the message "Connection Successful" will appear and the user will be allowed to modify the contents of the 
+            database they have just connected to
+         </p>
    
         </div>
       </main>
